@@ -1,0 +1,15 @@
+{
+	"title": "Révolution énergétique: les promesses des gaz propres",
+	"description": "Les nouveaux objectifs énergétiques nationaux d’ici à 2050 sont très ambitieux. Les gaz auront un rôle important à jouer pour relever le défi consistant notamment à remplacer toute l’énergie nucléaire et diminuer au maximum la consommation de pétrole",
+	"authors": "Philippe Clot, César Greppin",
+	"imgSocial": "social.jpg",   
+
+	"navBarStyle": "normal",
+	"navBarOffset": "0",
+	"navBarLocked": false,
+
+	"partner": {
+		"logo": "img/empty.png",
+		"link": "https://www.illustre.ch/"
+	}
+}

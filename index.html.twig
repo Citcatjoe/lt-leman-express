@@ -1,0 +1,844 @@
+{% use '_blocks.html.twig' %}
+<!DOCTYPE HTML>
+<html>
+    <head>
+        {{ block('head_brand') }} 
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/loader.css" />
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+        <link rel="stylesheet" type="text/css" href="css/owl.theme.css" />
+        <link rel="stylesheet" type="text/css" href="css/lity.css" />
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,900,400italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700" rel="stylesheet">
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css">
+        <script>var players = [];</script>
+    </head>
+    <body style="padding-top: {{ navBarOffset }};">
+        {{ block('bar_brand') }}
+        <div class="fixed-map-wrapper">
+            
+        </div>
+       <div class="overlay">
+            <img class="logo-brand" src="img/logo-illustre-pos.svg" alt="">
+            <img class="logo-sponsor" src="img/article/logo-gaz-energie.svg" alt="">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div> 
+        <header>
+            <div class="header__bg"></div>
+            <div class="header__gradient"></div>
+            <!-- <div class="video-wrapper">
+                <video playsinline autoplay loop muted>
+                  <source src="https://player.vimeo.com/external/272224606.hd.mp4?s=0767373c2b5d80d663ef69df7f25421cf400f1e7&profile_id=175" type="video/mp4"> 
+                  Votre navigateur ne supporte pas les vidéos HTML%.
+                </video>
+                </div> -->
+            <!-- <div class="smil-wrapper">
+                <div class="layer layer-bg"><img src="img/scene-intro-bg.svg" alt=""></div>
+                <div class="layer layer-clouds"><img src="quoi bon/scene-intro-clouds.svg" alt=""></div>
+                
+                <div class="layer layer-smoke1"><img src="img/scene-intro-smoke1.svg" alt=""></div>
+                <div class="layer layer-smoke2"><img src="img/scene-intro-smoke2.svg" alt=""></div>
+                <div class="layer layer-msc"><img src="img/scene-intro-msc.svg" alt=""></div>
+                <div class="layer layer-speedboat"><img src="img/scene-intro-speedboat.svg" alt=""></div>
+                <div class="layer layer-fishboat"><img src="img/scene-intro-fishboat.svg" alt=""></div>
+                </div> -->
+            <div class="header__content">
+                <div class="header__content__container">
+                    <div class="header__content__container__box">
+                        <h1>
+                          Révolution énergétique<br><span>Les promesses des gaz propres</span>
+                        </h1>
+                        <!-- <img class="separateur" src="img/separateur.svg" alt=""> -->
+                        <h2 class="author">Un article de<span> Philippe Clot</span></h2>
+                        <h2 class="social" >
+                            <a target="blank" href="https://www.facebook.com/sharer.php?u={{ app.url }}&display=popup&ref=plugin&src=share_button"><i class="fab fa-facebook-f"></i></a>
+                            <a target="blank" href="https://twitter.com/intent/tweet?text={{ description ~ ' ' ~ app.url ~ ' '|url_encode }}&via=letemps"><i class="fab fa-twitter fa-middle"></i></a>
+                            <a target="blank" href="mailto:?subject={{ title|url_encode }}&body={{ description|url_encode }}%0D%0A%0D%0A%0D%0A%0D%0A{{ app.url }}"><span class="brand-button"><i class="fas fa-envelope"></i></span></a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-indicator-inner"></div>
+            </div>
+            <div class="header-sponsor">
+                <!-- <a href="https://www.letemps.ch/partenariats" target="_blank"><span class="charte">[?]</span></a> -->
+                <a href="https://gazenergie.ch/fr/" target="_blank"><img src="img/article/logo-gaz-energie.svg" alt=""></a> 
+                <span>Avec le soutien de </span>
+            </div>
+        </header>
+        <!-- PETITE IMAGE ENTRE 2 PARAGRAPHES -->
+      {#   <section class="gallery small" style="padding-top: 40px; position: relative;">
+            <div class="layout">
+                <!-- <img class="zoom" src="img/article/map-top.svg"> -->
+                
+                <div class="caption">
+                    <b>NAVIGATION RAPIDE</b>, cliquez sur un sommet pour accéder à la section rapidement.
+                </div>
+            </div>
+        </section> #}
+        <section class="text" style="position: relative;">
+            <div class="container">
+                <h3>
+                   Le peuple suisse a accepté en 2017 la loi révisée sur l’énergie. Les nouveaux objectifs énergétiques nationaux d’ici à 2050 sont très ambitieux. Souvent injustement oublié dans les scénarios d’avenir, le gaz, ou plutôt les gaz auront un rôle important à jouer pour relever le défi consistant notamment à remplacer toute l’énergie nucléaire et diminuer au maximum la consommation de pétrole.
+                    <hr>
+                </h3>
+                <div class="spacer-small"></div>
+                <div class="spacer-small"></div>
+                <h4>
+                    Texte: Philippe Clot<br>
+                     <span>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span> Infographies: Manuel Forney<br>
+                    <span>&nbsp;&nbsp;&bull;&nbsp;&nbsp;</span> Format Web: César Greppin
+                </h4>
+               <!--  <p>
+                    Dans l’imaginaire collectif, la notion de vacances est le plus souvent rattachée à celle de plaisir: celui de pouvoir s’évader de son chez-soi et de son train-train quotidien pour se retrouver en famille dans le bonheur et l’harmonie. Dans la réalité, les choses ne se passent pas forcément de cette manière idyllique. 
+                </p>
+                <div class="block-content left nahum">
+                    <img class="zoom lazy" data-original="img/article/nahum-frenck.jpg" src="img/article/nahum-frenck.jpg" style="display: block;">
+                    <div class="caption"><b>Dr Nahum Frenck</b> – Photo par Julie de Tribolet</div>
+                </div>
+                <p>
+                    Nahum Frenck, pédiatre et thérapeute de famille à Lausanne, voit chaque été débarquer dans son cabinet des familles rentrées en catastrophe de vacances à la suite de multiples conflits. «C’est une situation récurrente, décrit-il, tant les liens entre les membres de la famille tendent de plus en plus, de nos jours, à se relâcher. Tout ce petit monde qui s’ignore une bonne partie de l’année se redécouvre le temps des vacances et ça se passe parfois très mal. Pour le père qui partait tous les matins au travail à 7 heures et rentrait tous les soirs pour mettre les pieds sous la table, se retrouver à vivre avec sa femme et ses enfants 24 heures sur 24 peut être une expérience à la fois révélatrice et traumatisante.»
+                </p> -->
+            </div>
+        </section>
+
+        
+
+        <script>
+       
+                </script>
+
+       <!--  <section class="flightmap">
+            <div class="map-container">
+                
+            </div>
+            <div class="side-container is-visible">
+                
+            </div>
+            
+        </section> -->
+
+
+        <section class="encart padding-bottom odd">
+            <div class="sponsor-bar">
+                <div class="sponsor-bar-container">
+                    <a href="https://gazenergie.ch/fr/" target="_blank"><img src="img/article/logo-gaz-energie.svg" alt=""></a>
+                    <span>Proposé par </span>
+                </div>
+            </div>
+            <div class="spacer-small"></div>
+            <div class="spacer-small"></div>
+            <div class="spacer-small"></div>
+            <div class="spacer-small"></div>
+            <div class="container">
+                <h3 class="inter-titre title"><b>Quelle est la différence entre gaz naturel et gaz renouvelable ?</b></h3>
+               <!--  <h4>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor obcaecati, sunt sed quia distinctio iusto beatae optio odio deserunt eum, praesentium cumque nulla, tempora aut tempore! Iure doloribus nihil sequi.
+                </h4> -->
+                <p>
+                  Le gaz naturel est présent dans le sous-sol, il lui faut des millions d’années pour se former. Il est extrait et brûlé pour produire de l’énergie. 
+                </p>
+                <!-- <img src="img/article/gornergrat.jpg" alt="" style="margin-bottom: 15px;"> -->
+                <p>
+                  Les gaz renouvelables produits à partir de la biomasse ou du power-to-gas respectent le climat et sont la clé de l’avenir énergétique. Mais comment est-ce que cela fonctionne et quels sont leurs avantages ? 
+
+                </p>
+
+                <p>
+                    Pour en savoir plus, regardez notre vidéo et rendez-vous sur <a href="https://gazenergie.ch/fr/" target="_blank">www.gazenergie.ch</a>.
+                </p>
+
+                <br><br><br><br>
+                
+
+                <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/F3_YT_zisXo' frameborder='0' allowfullscreen></iframe></div>
+
+
+                
+            </div>
+        </section>
+        <!-- PETITE IMAGE ENTRE 2 PARAGRAPHES -->
+        <!-- <section class="gallery small">
+            <div class="layout">
+            	<img class="zoom" src="img/lazy-placeholder.jpg">
+            	<div class="caption">
+            		<b>LES CLANDESTINS</b> ont souvent subi des situations de violence liées aux narcotrafiquants.
+            	</div>
+            </div>
+            </section> -->
+        <!-- HERO IMAGE ENTRE 2 PARAGRAPHES -->
+        <section class="gallery hero">
+            <div class="layout">
+                <img class="zoom" src="img/article/section1.jpg">
+                <div class="caption">
+                    Transport et montage d’une nouvelle installation gazière à Derendingen (SO) en 2018.
+                </div>
+            </div>
+        </section>
+        <section class="anchor-chasseral">
+            <div class="container">
+                <h3 class="inter-titre title">Le gaz naturel aujourd’hui et le power-to-gas</h3>
+                <p>
+                   Pour réussir le virage délicat de la Stratégie énergétique 2050, pour décarboner notre société en diminuant notre dépendance aux énergies fossiles, toutes les mesures et toutes les technologies sont bienvenues. L’état gazeux de la matière a des atouts pour accompagner les énergies renouvelables (solaire, hydraulique et éolien).
+                </p>
+                <p>
+                   Aujourd’hui, l’approvisionnement gazier dans le monde est constitué principalement de gaz naturel d’origine fossile. En Suisse, le gaz naturel représente 14% de toute l’énergie finale consommée, derrière les carburants et combustibles pétroliers (50%) et l’électricité (25%). C’est donc un vecteur énergétique important, qui a l’avantage d’émettre environ 25% de moins de CO2 que le mazout et l’essence.
+                </p>
+            </div>
+        </section>
+
+        <br><br><br>
+
+        <!-- PETITE IMAGE ENTRE 2 PARAGRAPHES -->
+        <section class="gallery small scene-baloonz" style="height: 100vh;">
+            <div class="layout">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg class="baloonz" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 287.8 320.5" style="enable-background:new 0 0 287.8 320.5;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#457B87;}
+                        .st1{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:2;}
+                        .st2{fill:#FFFFFF;}
+                        .st3{fill:#CC3E2C;}
+                    </style>
+                    <g id="blue_x5F_baloon">
+                        <g>
+                            <path class="st0" d="M9,171.1C9,96.5,69.4,36,144,36c74.6,0,135,60.5,135,135c0,74.6-60.5,135-135,135C69.4,306.1,9,245.6,9,171.1
+                                z"/>
+                        </g>
+                    </g>
+                    <g id="blue_x5F_text">
+                        <g>
+                            <g>
+                                <g>
+                                    <polyline class="st1" points="132.2,139.1 161.9,101.6 207,101.6                 "/>
+                                    <g>
+                                        <path class="st2" d="M133.7,140.2c-0.6,0.8-1.8,1-2.6,0.3c-0.8-0.6-1-1.8-0.3-2.6c0.6-0.8,1.8-1,2.6-0.3
+                                            C134.2,138.2,134.4,139.4,133.7,140.2z"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g>
+                            <path class="st2" d="M165.8,112.2c-0.8,0-1.7-0.3-2.3-0.7l0.4-1.5c0.6,0.4,1.3,0.7,1.9,0.7c0.6,0,0.8-0.3,0.8-0.6
+                                c0-0.4-0.2-0.6-1.2-1c-1.2-0.5-1.7-1.2-1.7-2c0-1,0.8-2,2.5-2c0.8,0,1.5,0.3,1.9,0.5l-0.4,1.4c-0.4-0.3-1-0.6-1.5-0.6
+                                c-0.6,0-0.8,0.3-0.8,0.6c0,0.5,0.4,0.6,1.2,1c1.3,0.6,1.7,1.2,1.7,2.1C168.2,111.1,167.4,112.2,165.8,112.2z"/>
+                            <path class="st2" d="M172.5,106.6v5.5h-1.6v-5.5h-2.1v-1.5h5.8v1.5H172.5z"/>
+                            <path class="st2" d="M178.9,112.2c-2.2,0-3.5-1.5-3.5-3.6c0-2.1,1.4-3.6,3.6-3.6c2.1,0,3.5,1.5,3.5,3.6
+                                C182.5,110.6,181.1,112.2,178.9,112.2z M179,106.4c-1.1,0-1.8,0.9-1.8,2.2c0,1.2,0.7,2.2,1.8,2.2c1.1,0,1.8-0.9,1.8-2.2
+                                C180.8,107.3,180.1,106.4,179,106.4z"/>
+                            <path class="st2" d="M187.4,112.2c-2.3,0-3.8-1.5-3.8-3.6c0-2.1,1.5-3.6,3.8-3.6c0.8,0,1.5,0.2,2.2,0.6l-0.5,1.4
+                                c-0.5-0.3-1.1-0.5-1.7-0.5c-1.3,0-2.1,0.8-2.1,2.1s0.8,2.1,2.1,2.1c0.6,0,1.2-0.2,1.7-0.5l0.5,1.4
+                                C189,111.9,188.2,112.2,187.4,112.2z"/>
+                            <path class="st2" d="M194.9,112l-2.6-3.3v3.3h-1.6v-7h1.6v3l2.4-3h1.9l-2.9,3.3l3,3.7H194.9z"/>
+                            <path class="st2" d="M202,112l-0.5-1.3h-2.4l-0.5,1.3h-1.6l3.3-7h0.2l3.3,7H202z M200.3,107.9l-0.7,1.7h1.4L200.3,107.9z"/>
+                            <path class="st2" d="M210.4,108.1v3.3c-0.8,0.4-1.6,0.7-2.6,0.7c-2,0-3.7-1.5-3.7-3.6c0-2.1,1.6-3.6,3.7-3.6
+                                c0.9,0,1.6,0.2,2.3,0.6l-0.7,1.3c-0.5-0.3-1-0.4-1.6-0.4c-1.4,0-2.1,0.9-2.1,2.1c0,1.3,0.9,2.2,2,2.2c0.5,0,0.8-0.1,1-0.2v-1h-1.4
+                                v-1.4H210.4z"/>
+                            <path class="st2" d="M211.7,112v-7h4.4v1.5h-2.8v1.2h2.5v1.4h-2.5v1.4h2.8v1.5H211.7z"/>
+                            <path class="st2" d="M166.1,123.5c-0.8,0-1.3,0-2.1-0.1v-6.8c0.8-0.1,1.4-0.1,2.1-0.1c2.9,0,4.2,1.5,4.2,3.5
+                                C170.2,121.9,168.9,123.5,166.1,123.5z M166.2,117.9c-0.3,0-0.4,0-0.7,0v4.1c0.3,0,0.4,0,0.8,0c1.5,0,2.2-0.9,2.2-2.2
+                                C168.5,118.6,167.7,117.9,166.2,117.9z"/>
+                            <path class="st2" d="M171.5,123.4v-7h4.4v1.5h-2.8v1.2h2.5v1.4h-2.5v1.4h2.8v1.5H171.5z"/>
+                            <path class="st2" d="M185.4,119.5v3.3c-0.8,0.4-1.6,0.7-2.6,0.7c-2,0-3.7-1.5-3.7-3.6c0-2.1,1.6-3.6,3.7-3.6
+                                c0.9,0,1.6,0.2,2.3,0.6l-0.7,1.3c-0.5-0.3-1-0.4-1.6-0.4c-1.4,0-2.1,0.9-2.1,2.1c0,1.3,0.9,2.2,2,2.2c0.5,0,0.8-0.1,1-0.2v-1h-1.4
+                                v-1.4H185.4z"/>
+                            <path class="st2" d="M190.9,123.4l-0.5-1.3H188l-0.5,1.3h-1.6l3.3-7h0.2l3.3,7H190.9z M189.2,119.3l-0.7,1.7h1.4L189.2,119.3z"/>
+                            <path class="st2" d="M195.3,122h3.3v1.5h-5.9l0-0.2l3.5-5.3h-3.2v-1.5h5.8l0,0.2L195.3,122z"/>
+                            <path class="st2" d="M167.4,135c-2.1,0-3.7-1.5-3.7-3.6c0-2.1,1.6-3.6,3.7-3.6c0.9,0,1.7,0.3,2.3,0.7l-0.3,0.6
+                                c-0.6-0.3-1.4-0.6-2.1-0.6c-1.8,0-2.8,1.2-2.8,2.9s1.1,2.9,2.9,2.9c0.7,0,1.5-0.3,2.1-0.6l0.2,0.6
+                                C169.1,134.6,168.3,135,167.4,135z"/>
+                            <path class="st2" d="M173,134.8v-0.4c-0.3,0.3-0.7,0.5-1.2,0.5c-0.8,0-1.4-0.5-1.4-1.3c0-0.7,0.6-1.2,1.4-1.2
+                                c0.6,0,0.9,0.1,1.2,0.3v-0.2c0-0.7-0.3-1-1-1c-0.4,0-0.8,0.1-1,0.2l-0.1-0.6c0.4-0.1,0.9-0.2,1.3-0.2c1.1,0,1.7,0.5,1.7,1.7v2.4
+                                H173z M172.9,133.3c-0.4-0.2-0.6-0.3-1.1-0.3c-0.5,0-0.8,0.2-0.8,0.7c0,0.4,0.3,0.7,0.9,0.7c0.4,0,0.8-0.2,1-0.5V133.3z"/>
+                            <path class="st2" d="M176.6,134.9c-0.4,0-0.8-0.1-1.2-0.3v2.3h-0.8v-6h0.7v0.4c0.3-0.3,0.8-0.5,1.3-0.5c1.1,0,1.9,0.8,1.9,2
+                                C178.6,134,177.8,134.9,176.6,134.9z M176.6,131.4c-0.5,0-0.9,0.2-1.2,0.5v2c0.2,0.3,0.7,0.5,1.2,0.5c0.8,0,1.3-0.6,1.3-1.5
+                                C177.9,132,177.4,131.4,176.6,131.4z"/>
+                            <path class="st2" d="M182,134.8v-0.4c-0.3,0.3-0.7,0.5-1.2,0.5c-0.8,0-1.4-0.5-1.4-1.3c0-0.7,0.6-1.2,1.4-1.2
+                                c0.6,0,0.9,0.1,1.2,0.3v-0.2c0-0.7-0.3-1-1-1c-0.4,0-0.8,0.1-1,0.2l-0.1-0.6c0.4-0.1,0.9-0.2,1.3-0.2c1.1,0,1.7,0.5,1.7,1.7v2.4
+                                H182z M182,133.3c-0.4-0.2-0.6-0.3-1.1-0.3c-0.5,0-0.8,0.2-0.8,0.7c0,0.4,0.3,0.7,0.9,0.7c0.4,0,0.8-0.2,1-0.5V133.3z"/>
+                            <path class="st2" d="M185.8,134.9c-1.3,0-2.2-0.9-2.2-2.1s0.9-2.1,2.2-2.1c0.5,0,1,0.2,1.4,0.4l-0.3,0.6c-0.3-0.2-0.7-0.3-1.1-0.3
+                                c-0.8,0-1.4,0.5-1.4,1.4c0,0.9,0.7,1.4,1.4,1.4c0.4,0,0.8-0.1,1.1-0.3l0.3,0.6C186.8,134.7,186.3,134.9,185.8,134.9z"/>
+                            <path class="st2" d="M188.3,129.9c-0.3,0-0.5-0.2-0.5-0.5c0-0.3,0.2-0.5,0.5-0.5c0.3,0,0.5,0.2,0.5,0.5
+                                C188.8,129.7,188.6,129.9,188.3,129.9z M187.9,134.8v-4h0.8v4H187.9z"/>
+                            <path class="st2" d="M190.8,131.5v2.2c0,0.4,0.2,0.5,0.6,0.5c0.1,0,0.2,0,0.3,0l0.1,0.6c-0.2,0-0.4,0.1-0.7,0.1
+                                c-0.7,0-1.1-0.4-1.1-1.3v-2.2h-0.6v-0.1l0.6-0.6v-0.7l0.7-0.5v1.3h1.2v0.6H190.8z"/>
+                            <path class="st2" d="M196.2,133.1h-2.9c0.1,0.7,0.5,1.2,1.5,1.2c0.3,0,0.7-0.1,1.1-0.2l0.1,0.6c-0.5,0.1-0.9,0.2-1.3,0.2
+                                c-1.4,0-2.2-0.9-2.2-2.1c0-1.1,0.7-2.1,1.9-2.1c1.1,0,1.7,0.8,1.7,1.9C196.2,132.8,196.2,132.9,196.2,133.1z M195.5,132.5
+                                c0-0.6-0.4-1.1-1.1-1.1c-0.6,0-1,0.4-1.1,1.1H195.5z M194.1,130.3l-0.2-0.4l1.7-1.2l0.4,0.8L194.1,130.3z"/>
+                            <path class="st2" d="M200.2,131.5v2.2c0,0.4,0.2,0.5,0.6,0.5c0.1,0,0.2,0,0.3,0l0.1,0.6c-0.2,0-0.4,0.1-0.7,0.1
+                                c-0.7,0-1.1-0.4-1.1-1.3v-2.2h-0.6v-0.1l0.6-0.6v-0.7l0.7-0.5v1.3h1.2v0.6H200.2z"/>
+                            <path class="st2" d="M204,134.9c-1.2,0-2-0.9-2-2.1s0.8-2.1,2-2.1s2,0.9,2,2.1S205.2,134.9,204,134.9z M204,131.4
+                                c-0.8,0-1.3,0.6-1.3,1.5c0,0.9,0.5,1.5,1.3,1.5c0.8,0,1.3-0.6,1.3-1.5C205.2,132,204.7,131.4,204,131.4z"/>
+                            <path class="st2" d="M207.9,131.5v2.2c0,0.4,0.2,0.5,0.6,0.5c0.1,0,0.2,0,0.3,0l0.1,0.6c-0.2,0-0.4,0.1-0.7,0.1
+                                c-0.7,0-1.1-0.4-1.1-1.3v-2.2h-0.6v-0.1l0.6-0.6v-0.7l0.7-0.5v1.3h1.2v0.6H207.9z"/>
+                            <path class="st2" d="M212.2,134.8v-0.4c-0.3,0.3-0.7,0.5-1.2,0.5c-0.8,0-1.4-0.5-1.4-1.3c0-0.7,0.6-1.2,1.4-1.2
+                                c0.6,0,0.9,0.1,1.2,0.3v-0.2c0-0.7-0.3-1-1-1c-0.4,0-0.8,0.1-1,0.2L210,131c0.4-0.1,0.9-0.2,1.3-0.2c1.1,0,1.7,0.5,1.7,1.7v2.4
+                                H212.2z M212.2,133.3c-0.4-0.2-0.6-0.3-1.1-0.3c-0.5,0-0.8,0.2-0.8,0.7c0,0.4,0.3,0.7,0.9,0.7c0.4,0,0.8-0.2,1-0.5V133.3z"/>
+                            <path class="st2" d="M214,134.8v-7h0.8v7H214z"/>
+                            <path class="st2" d="M219.4,133.1h-2.9c0.1,0.7,0.5,1.2,1.5,1.2c0.3,0,0.7-0.1,1.1-0.2l0.1,0.6c-0.5,0.1-0.9,0.2-1.3,0.2
+                                c-1.4,0-2.2-0.9-2.2-2.1c0-1.1,0.7-2.1,1.9-2.1c1.1,0,1.8,0.8,1.8,1.9C219.4,132.8,219.4,132.9,219.4,133.1z M218.7,132.5
+                                c0-0.6-0.4-1.1-1.1-1.1c-0.6,0-1,0.4-1.1,1.1H218.7z"/>
+                            <path class="st2" d="M166.8,146.2v-0.4c-0.3,0.3-0.8,0.5-1.3,0.5c-1.2,0-1.9-0.8-1.9-2c0-1.2,0.9-2.1,2-2.1c0.5,0,0.9,0.2,1.2,0.4
+                                v-3.3h0.8v7H166.8z M166.7,143.3c-0.2-0.3-0.6-0.5-1.2-0.5c-0.8,0-1.3,0.6-1.3,1.5c0,0.8,0.5,1.4,1.3,1.4c0.5,0,0.8-0.2,1.1-0.5
+                                V143.3z"/>
+                            <path class="st2" d="M171,146.2v-0.4c-0.3,0.3-0.7,0.5-1.2,0.5c-0.8,0-1.4-0.5-1.4-1.3c0-0.7,0.6-1.2,1.4-1.2
+                                c0.6,0,0.9,0.1,1.2,0.3v-0.2c0-0.7-0.3-1-1-1c-0.4,0-0.8,0.1-1,0.2l-0.1-0.6c0.4-0.1,0.9-0.2,1.3-0.2c1.1,0,1.7,0.5,1.7,1.7v2.4
+                                H171z M171,144.7c-0.4-0.2-0.6-0.3-1.1-0.3c-0.5,0-0.8,0.2-0.8,0.7c0,0.4,0.3,0.7,0.9,0.7c0.4,0,0.8-0.2,1-0.5V144.7z"/>
+                            <path class="st2" d="M175.5,146.2v-2.5c0-0.6-0.2-0.9-0.8-0.9c-0.4,0-0.9,0.3-1.2,0.6v2.8h-0.8v-4h0.7v0.6
+                                c0.4-0.4,0.9-0.7,1.5-0.7c0.9,0,1.3,0.6,1.3,1.4v2.7H175.5z"/>
+                            <path class="st2" d="M178.5,146.3c-0.6,0-1-0.2-1.4-0.5l0.4-0.5c0.3,0.3,0.7,0.4,1,0.4c0.5,0,0.7-0.2,0.7-0.6
+                                c0-0.8-1.9-0.6-1.9-1.8c0-0.6,0.5-1.2,1.4-1.2c0.4,0,0.9,0.2,1.2,0.4l-0.3,0.6c-0.3-0.2-0.5-0.3-0.9-0.3c-0.5,0-0.6,0.2-0.6,0.5
+                                c0,0.7,1.9,0.5,1.9,1.8C179.8,145.7,179.3,146.3,178.5,146.3z"/>
+                            <path class="st2" d="M185.7,146.2v-2.5c0-0.6-0.3-0.9-0.8-0.9c-0.4,0-1,0.3-1.2,0.6v2.8h-0.8v-7h0.8v3.6c0.4-0.4,0.9-0.7,1.4-0.7
+                                c0.9,0,1.4,0.6,1.4,1.4v2.7H185.7z"/>
+                            <path class="st2" d="M190.3,146.2v-0.6c-0.3,0.3-0.9,0.6-1.4,0.6c-0.9,0-1.4-0.6-1.4-1.4v-2.7h0.8v2.5c0,0.6,0.3,0.9,0.8,0.9
+                                c0.4,0,0.9-0.3,1.2-0.6v-2.8h0.8v4H190.3z"/>
+                            <path class="st2" d="M192.6,141.3c-0.3,0-0.5-0.2-0.5-0.5c0-0.3,0.2-0.5,0.5-0.5c0.3,0,0.5,0.2,0.5,0.5
+                                C193,141.1,192.8,141.3,192.6,141.3z M192.2,146.2v-4h0.8v4H192.2z"/>
+                            <path class="st2" d="M195,142.9v2.2c0,0.4,0.2,0.5,0.6,0.5c0.1,0,0.2,0,0.3,0l0.1,0.6c-0.2,0-0.4,0.1-0.7,0.1
+                                c-0.7,0-1.1-0.4-1.1-1.3v-2.2h-0.6v-0.1l0.6-0.6v-0.7l0.7-0.5v1.3h1.2v0.6H195z"/>
+                            <path class="st2" d="M201,146.3c-0.4,0-0.8-0.1-1.2-0.3v2.3h-0.8v-6h0.7v0.4c0.3-0.3,0.8-0.5,1.3-0.5c1.1,0,1.9,0.8,1.9,2
+                                C203,145.4,202.2,146.3,201,146.3z M201,142.8c-0.5,0-0.9,0.2-1.2,0.5v2c0.2,0.3,0.7,0.5,1.2,0.5c0.8,0,1.3-0.6,1.3-1.5
+                                C202.3,143.4,201.8,142.8,201,142.8z"/>
+                            <path class="st2" d="M206.4,146.2v-0.4c-0.3,0.3-0.7,0.5-1.2,0.5c-0.8,0-1.4-0.5-1.4-1.3c0-0.7,0.6-1.2,1.4-1.2
+                                c0.6,0,0.9,0.1,1.2,0.3v-0.2c0-0.7-0.3-1-1-1c-0.4,0-0.8,0.1-1,0.2l-0.1-0.6c0.4-0.1,0.9-0.2,1.3-0.2c1.1,0,1.7,0.5,1.7,1.7v2.4
+                                H206.4z M206.4,144.7c-0.4-0.2-0.6-0.3-1.1-0.3c-0.5,0-0.8,0.2-0.8,0.7c0,0.4,0.3,0.7,0.9,0.7c0.4,0,0.8-0.2,1-0.5V144.7z"/>
+                            <path class="st2" d="M208.9,148.3h-0.8l1.2-2.4l-1.7-3.6h0.8l1.2,2.9l1.2-2.9h0.8L208.9,148.3z"/>
+                            <path class="st2" d="M213.5,146.3c-0.6,0-1-0.2-1.4-0.5l0.4-0.5c0.3,0.3,0.7,0.4,1,0.4c0.5,0,0.7-0.2,0.7-0.6
+                                c0-0.8-1.9-0.6-1.9-1.8c0-0.6,0.5-1.2,1.4-1.2c0.4,0,0.9,0.2,1.2,0.4l-0.3,0.6c-0.3-0.2-0.5-0.3-0.9-0.3c-0.5,0-0.6,0.2-0.6,0.5
+                                c0,0.7,1.9,0.5,1.9,1.8C214.8,145.7,214.3,146.3,213.5,146.3z"/>
+                            <path class="st2" d="M167.2,155.9h-2.9c0.1,0.7,0.5,1.2,1.5,1.2c0.3,0,0.7-0.1,1.1-0.2l0.1,0.6c-0.5,0.1-0.9,0.2-1.3,0.2
+                                c-1.4,0-2.2-0.9-2.2-2.1c0-1.1,0.7-2.1,1.9-2.1c1.1,0,1.8,0.8,1.8,1.9C167.2,155.6,167.2,155.7,167.2,155.9z M166.5,155.3
+                                c0-0.6-0.4-1.1-1.1-1.1c-0.6,0-1,0.4-1.1,1.1H166.5z"/>
+                            <path class="st2" d="M170.9,157.6v-0.6c-0.3,0.3-0.9,0.6-1.4,0.6c-0.9,0-1.4-0.6-1.4-1.4v-2.7h0.8v2.5c0,0.6,0.3,0.9,0.8,0.9
+                                c0.4,0,0.9-0.3,1.2-0.6v-2.8h0.8v4H170.9z"/>
+                            <path class="st2" d="M173.5,154.9v2.7h-0.8v-4h0.7v0.7c0.4-0.5,0.9-0.7,1.4-0.7v0.7C174.3,154.3,173.7,154.5,173.5,154.9z"/>
+                            <path class="st2" d="M177.4,157.7c-1.2,0-2-0.9-2-2.1s0.8-2.1,2-2.1s2,0.9,2,2.1S178.6,157.7,177.4,157.7z M177.4,154.2
+                                c-0.8,0-1.3,0.6-1.3,1.5c0,0.9,0.5,1.5,1.3,1.5c0.8,0,1.3-0.6,1.3-1.5C178.7,154.8,178.2,154.2,177.4,154.2z"/>
+                            <path class="st2" d="M182.3,157.7c-0.4,0-0.8-0.1-1.2-0.3v2.3h-0.8v-6h0.7v0.4c0.3-0.3,0.8-0.5,1.3-0.5c1.1,0,1.9,0.8,1.9,2
+                                C184.3,156.8,183.5,157.7,182.3,157.7z M182.3,154.2c-0.5,0-0.9,0.2-1.2,0.5v2c0.2,0.3,0.7,0.5,1.2,0.5c0.8,0,1.3-0.6,1.3-1.5
+                                C183.6,154.8,183.1,154.2,182.3,154.2z"/>
+                            <path class="st2" d="M188.8,155.9h-2.9c0.1,0.7,0.5,1.2,1.5,1.2c0.3,0,0.7-0.1,1.1-0.2l0.1,0.6c-0.5,0.1-0.9,0.2-1.3,0.2
+                                c-1.4,0-2.2-0.9-2.2-2.1c0-1.1,0.7-2.1,1.9-2.1c1.1,0,1.8,0.8,1.8,1.9C188.8,155.6,188.8,155.7,188.8,155.9z M188.1,155.3
+                                c0-0.6-0.4-1.1-1.1-1.1c-0.6,0-1,0.4-1.1,1.1H188.1z M186.7,153.1l-0.2-0.4l1.7-1.2l0.4,0.8L186.7,153.1z"/>
+                            <path class="st2" d="M193.2,155.9h-2.9c0.1,0.7,0.5,1.2,1.5,1.2c0.3,0,0.7-0.1,1.1-0.2l0.1,0.6c-0.5,0.1-0.9,0.2-1.3,0.2
+                                c-1.4,0-2.2-0.9-2.2-2.1c0-1.1,0.7-2.1,1.9-2.1c1.1,0,1.7,0.8,1.7,1.9C193.2,155.6,193.2,155.7,193.2,155.9z M192.5,155.3
+                                c0-0.6-0.4-1.1-1.1-1.1c-0.6,0-1,0.4-1.1,1.1H192.5z"/>
+                            <path class="st2" d="M196.9,157.6v-2.5c0-0.6-0.2-0.9-0.8-0.9c-0.4,0-0.9,0.3-1.2,0.6v2.8h-0.8v-4h0.7v0.6
+                                c0.4-0.4,0.9-0.7,1.5-0.7c0.9,0,1.3,0.6,1.3,1.4v2.7H196.9z"/>
+                            <path class="st2" d="M199.8,157.7c-0.6,0-1-0.2-1.4-0.5l0.4-0.5c0.3,0.3,0.7,0.4,1,0.4c0.5,0,0.7-0.2,0.7-0.6
+                                c0-0.8-1.9-0.6-1.9-1.8c0-0.6,0.5-1.2,1.4-1.2c0.4,0,0.9,0.2,1.2,0.4l-0.3,0.6c-0.3-0.2-0.5-0.3-0.9-0.3c-0.5,0-0.6,0.2-0.6,0.5
+                                c0,0.7,1.9,0.5,1.9,1.8C201.2,157.1,200.6,157.7,199.8,157.7z"/>
+                            <path class="st2" d="M202.6,156.7c0.3,0,0.5,0.2,0.5,0.5c0,0.3-0.2,0.5-0.5,0.5c-0.3,0-0.5-0.2-0.5-0.5
+                                C202.1,157,202.3,156.7,202.6,156.7z"/>
+                        </g>
+                    </g>
+                    <g id="red_x5F_baloon">
+                        <circle class="st3" cx="144" cy="283.1" r="23"/>
+                    </g>
+                    <g id="red_x5F_text">
+                        <g>
+                            <path class="st2" d="M180.6,235.1c-0.8,0-1.7-0.3-2.3-0.7l0.4-1.5c0.6,0.4,1.3,0.7,1.9,0.7c0.6,0,0.8-0.3,0.8-0.6
+                                c0-0.4-0.2-0.6-1.2-1c-1.2-0.5-1.7-1.2-1.7-2c0-1,0.8-2,2.5-2c0.8,0,1.5,0.3,1.9,0.5l-0.4,1.4c-0.4-0.3-1-0.6-1.5-0.6
+                                c-0.6,0-0.8,0.3-0.8,0.6c0,0.5,0.4,0.6,1.2,1c1.3,0.6,1.7,1.2,1.7,2.1C183.1,234,182.3,235.1,180.6,235.1z"/>
+                            <path class="st2" d="M187.4,229.5v5.5h-1.6v-5.5h-2.1V228h5.8v1.5H187.4z"/>
+                            <path class="st2" d="M193.8,235.1c-2.2,0-3.5-1.5-3.5-3.6c0-2.1,1.4-3.6,3.6-3.6c2.1,0,3.5,1.5,3.5,3.6
+                                C197.4,233.5,196,235.1,193.8,235.1z M193.9,229.3c-1.1,0-1.8,0.9-1.8,2.2c0,1.2,0.7,2.2,1.8,2.2s1.8-0.9,1.8-2.2
+                                C195.7,230.2,195,229.3,193.9,229.3z"/>
+                            <path class="st2" d="M202.3,235.1c-2.3,0-3.8-1.5-3.8-3.6c0-2.1,1.5-3.6,3.8-3.6c0.8,0,1.5,0.2,2.2,0.6l-0.5,1.4
+                                c-0.5-0.3-1.1-0.5-1.7-0.5c-1.3,0-2.1,0.8-2.1,2.1s0.8,2.1,2.1,2.1c0.6,0,1.2-0.2,1.7-0.5l0.5,1.4
+                                C203.9,234.8,203.1,235.1,202.3,235.1z"/>
+                            <path class="st2" d="M209.8,235l-2.6-3.3v3.3h-1.6v-7h1.6v3l2.4-3h1.9l-2.9,3.3l3,3.7H209.8z"/>
+                            <path class="st2" d="M216.9,235l-0.5-1.3H214l-0.5,1.3h-1.6l3.3-7h0.2l3.3,7H216.9z M215.2,230.8l-0.7,1.7h1.4L215.2,230.8z"/>
+                            <path class="st2" d="M225.3,231.1v3.3c-0.8,0.4-1.6,0.7-2.6,0.7c-2,0-3.7-1.5-3.7-3.6c0-2.1,1.6-3.6,3.7-3.6
+                                c0.9,0,1.6,0.2,2.3,0.6l-0.7,1.3c-0.5-0.3-1-0.4-1.6-0.4c-1.4,0-2.1,0.9-2.1,2.1c0,1.3,0.9,2.2,2,2.2c0.5,0,0.8-0.1,1-0.2v-1h-1.4
+                                v-1.4H225.3z"/>
+                            <path class="st2" d="M226.6,235v-7h4.4v1.5h-2.8v1.2h2.5v1.4h-2.5v1.4h2.8v1.5H226.6z"/>
+                            <path class="st2" d="M181,246.4c-0.8,0-1.3,0-2.1-0.1v-6.8c0.8-0.1,1.4-0.1,2.1-0.1c2.9,0,4.2,1.5,4.2,3.5
+                                C185.1,244.9,183.8,246.4,181,246.4z M181.1,240.8c-0.3,0-0.4,0-0.7,0v4.1c0.3,0,0.4,0,0.8,0c1.5,0,2.2-0.9,2.2-2.2
+                                C183.4,241.6,182.6,240.8,181.1,240.8z"/>
+                            <path class="st2" d="M186.2,241.6l-0.1-0.2c0.3-0.2,0.5-0.5,0.6-0.8c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.6,0.6-0.6
+                                c0.5,0,0.7,0.3,0.7,0.8C187.4,240.7,186.9,241.3,186.2,241.6z"/>
+                            <path class="st2" d="M188.4,246.4v-7h4.4v1.5H190v1.2h2.5v1.4H190v1.4h2.8v1.5H188.4z M190.3,238.9l-0.3-0.6l1.8-1.3l0.6,1.1
+                                L190.3,238.9z"/>
+                            <path class="st2" d="M194.3,246.4v-7h1.6v5.5h2.8v1.5H194.3z"/>
+                            <path class="st2" d="M199.6,246.4v-7h4.4v1.5h-2.8v1.2h2.5v1.4h-2.5v1.4h2.8v1.5H199.6z"/>
+                            <path class="st2" d="M209,246.5c-2.3,0-3.8-1.5-3.8-3.6c0-2.1,1.5-3.6,3.8-3.6c0.8,0,1.5,0.2,2.2,0.6l-0.5,1.4
+                                c-0.5-0.3-1.1-0.5-1.7-0.5c-1.3,0-2.1,0.8-2.1,2.1s0.8,2.1,2.1,2.1c0.6,0,1.2-0.2,1.7-0.5l0.5,1.4
+                                C210.6,246.2,209.8,246.5,209,246.5z"/>
+                            <path class="st2" d="M215.5,240.9v5.5h-1.6v-5.5h-2.1v-1.5h5.8v1.5H215.5z"/>
+                            <path class="st2" d="M222.3,246.4l-1.2-2.3c-0.1,0-0.2,0-0.3,0c-0.2,0-0.4,0-0.6,0v2.3h-1.6v-6.9c0.6-0.1,1.2-0.1,2.1-0.1
+                                c2.2,0,3,1,3,2.3c0,0.8-0.4,1.6-1.2,2l1.6,2.7H222.3z M220.8,240.8c-0.2,0-0.4,0-0.6,0v1.9c0.2,0,0.3,0,0.5,0
+                                c0.8,0,1.3-0.4,1.3-1.1C222,241.1,221.5,240.8,220.8,240.8z"/>
+                            <path class="st2" d="M225,246.4v-7h1.6v7H225z"/>
+                            <path class="st2" d="M231.7,246.5c-2.3,0-3.8-1.5-3.8-3.6c0-2.1,1.5-3.6,3.8-3.6c0.8,0,1.5,0.2,2.2,0.6l-0.5,1.4
+                                c-0.5-0.3-1.1-0.5-1.7-0.5c-1.3,0-2.1,0.8-2.1,2.1s0.8,2.1,2.1,2.1c0.6,0,1.2-0.2,1.7-0.5l0.5,1.4
+                                C233.4,246.2,232.5,246.5,231.7,246.5z"/>
+                            <path class="st2" d="M235.1,246.4v-7h1.6v7H235.1z"/>
+                            <path class="st2" d="M241.5,240.9v5.5h-1.6v-5.5h-2.1v-1.5h5.8v1.5H241.5z"/>
+                            <path class="st2" d="M244.6,246.4v-7h4.4v1.5h-2.8v1.2h2.5v1.4h-2.5v1.4h2.8v1.5H244.6z M246.5,238.9l-0.3-0.6l1.8-1.3l0.6,1.1
+                                L246.5,238.9z"/>
+                            <path class="st2" d="M182.3,257.9c-2.1,0-3.7-1.5-3.7-3.6c0-2.1,1.6-3.6,3.7-3.6c0.9,0,1.7,0.3,2.3,0.7l-0.3,0.6
+                                c-0.6-0.3-1.4-0.6-2.1-0.6c-1.8,0-2.8,1.2-2.8,2.9s1.1,2.9,2.9,2.9c0.7,0,1.5-0.3,2.1-0.6l0.2,0.6
+                                C184,257.6,183.2,257.9,182.3,257.9z"/>
+                            <path class="st2" d="M187.9,257.8v-0.4c-0.3,0.3-0.7,0.5-1.2,0.5c-0.8,0-1.4-0.5-1.4-1.3c0-0.7,0.6-1.2,1.4-1.2
+                                c0.6,0,0.9,0.1,1.2,0.3v-0.2c0-0.7-0.3-1-1-1c-0.4,0-0.8,0.1-1,0.2l-0.1-0.6c0.4-0.1,0.9-0.2,1.3-0.2c1.1,0,1.7,0.5,1.7,1.7v2.4
+                                H187.9z M187.8,256.2c-0.4-0.2-0.6-0.3-1.1-0.3c-0.5,0-0.8,0.2-0.8,0.7c0,0.4,0.3,0.7,0.9,0.7c0.4,0,0.8-0.2,1-0.5V256.2z"/>
+                            <path class="st2" d="M191.5,257.9c-0.4,0-0.8-0.1-1.2-0.3v2.3h-0.8v-6h0.7v0.4c0.3-0.3,0.8-0.5,1.3-0.5c1.1,0,1.9,0.8,1.9,2
+                                C193.5,256.9,192.7,257.9,191.5,257.9z M191.5,254.3c-0.5,0-0.9,0.2-1.2,0.5v2c0.2,0.3,0.7,0.5,1.2,0.5c0.8,0,1.3-0.6,1.3-1.5
+                                C192.8,255,192.3,254.3,191.5,254.3z"/>
+                            <path class="st2" d="M196.9,257.8v-0.4c-0.3,0.3-0.7,0.5-1.2,0.5c-0.8,0-1.4-0.5-1.4-1.3c0-0.7,0.6-1.2,1.4-1.2
+                                c0.6,0,0.9,0.1,1.2,0.3v-0.2c0-0.7-0.3-1-1-1c-0.4,0-0.8,0.1-1,0.2l-0.1-0.6c0.4-0.1,0.9-0.2,1.3-0.2c1.1,0,1.7,0.5,1.7,1.7v2.4
+                                H196.9z M196.9,256.2c-0.4-0.2-0.6-0.3-1.1-0.3c-0.5,0-0.8,0.2-0.8,0.7c0,0.4,0.3,0.7,0.9,0.7c0.4,0,0.8-0.2,1-0.5V256.2z"/>
+                            <path class="st2" d="M200.7,257.9c-1.3,0-2.2-0.9-2.2-2.1c0-1.2,0.9-2.1,2.2-2.1c0.5,0,1,0.2,1.4,0.4l-0.3,0.6
+                                c-0.3-0.2-0.7-0.3-1.1-0.3c-0.8,0-1.4,0.5-1.4,1.4c0,0.9,0.7,1.4,1.4,1.4c0.4,0,0.8-0.1,1.1-0.3l0.3,0.6
+                                C201.7,257.7,201.2,257.9,200.7,257.9z"/>
+                            <path class="st2" d="M203.2,252.9c-0.3,0-0.5-0.2-0.5-0.5c0-0.3,0.2-0.5,0.5-0.5c0.3,0,0.5,0.2,0.5,0.5
+                                C203.7,252.7,203.5,252.9,203.2,252.9z M202.8,257.8v-4h0.8v4H202.8z"/>
+                            <path class="st2" d="M205.7,254.4v2.2c0,0.4,0.2,0.5,0.6,0.5c0.1,0,0.2,0,0.3,0l0.1,0.6c-0.2,0-0.4,0.1-0.7,0.1
+                                c-0.7,0-1.1-0.4-1.1-1.3v-2.2h-0.6v-0.1l0.6-0.6V253l0.7-0.5v1.3h1.2v0.6H205.7z"/>
+                            <path class="st2" d="M211.1,256h-2.9c0.1,0.7,0.5,1.2,1.5,1.2c0.3,0,0.7-0.1,1.1-0.2l0.1,0.6c-0.5,0.1-0.9,0.2-1.3,0.2
+                                c-1.4,0-2.2-0.9-2.2-2.1c0-1.1,0.7-2.1,1.9-2.1c1.1,0,1.8,0.8,1.8,1.9C211.1,255.8,211.1,255.9,211.1,256z M210.4,255.4
+                                c0-0.6-0.4-1.1-1.1-1.1c-0.6,0-1,0.4-1.1,1.1H210.4z M209,253.3l-0.2-0.4l1.7-1.2l0.4,0.8L209,253.3z"/>
+                            <path class="st2" d="M215.1,254.4v2.2c0,0.4,0.2,0.5,0.6,0.5c0.1,0,0.2,0,0.3,0l0.1,0.6c-0.2,0-0.4,0.1-0.7,0.1
+                                c-0.7,0-1.1-0.4-1.1-1.3v-2.2h-0.6v-0.1l0.6-0.6V253l0.7-0.5v1.3h1.2v0.6H215.1z"/>
+                            <path class="st2" d="M218.9,257.9c-1.2,0-2-0.9-2-2.1c0-1.1,0.8-2.1,2-2.1s2,0.9,2,2.1C220.9,256.9,220.1,257.9,218.9,257.9z
+                                 M218.9,254.3c-0.8,0-1.3,0.6-1.3,1.5c0,0.9,0.5,1.5,1.3,1.5c0.8,0,1.3-0.6,1.3-1.5C220.1,254.9,219.6,254.3,218.9,254.3z"/>
+                            <path class="st2" d="M222.8,254.4v2.2c0,0.4,0.2,0.5,0.6,0.5c0.1,0,0.2,0,0.3,0l0.1,0.6c-0.2,0-0.4,0.1-0.7,0.1
+                                c-0.7,0-1.1-0.4-1.1-1.3v-2.2h-0.6v-0.1l0.6-0.6V253l0.7-0.5v1.3h1.2v0.6H222.8z"/>
+                            <path class="st2" d="M227.1,257.8v-0.4c-0.3,0.3-0.7,0.5-1.2,0.5c-0.8,0-1.4-0.5-1.4-1.3c0-0.7,0.6-1.2,1.4-1.2
+                                c0.6,0,0.9,0.1,1.2,0.3v-0.2c0-0.7-0.3-1-1-1c-0.4,0-0.8,0.1-1,0.2l-0.1-0.6c0.4-0.1,0.9-0.2,1.3-0.2c1.1,0,1.7,0.5,1.7,1.7v2.4
+                                H227.1z M227.1,256.2c-0.4-0.2-0.6-0.3-1.1-0.3c-0.5,0-0.8,0.2-0.8,0.7c0,0.4,0.3,0.7,0.9,0.7c0.4,0,0.8-0.2,1-0.5V256.2z"/>
+                            <path class="st2" d="M228.9,257.8v-7h0.8v7H228.9z"/>
+                            <path class="st2" d="M234.3,256h-2.9c0.1,0.7,0.5,1.2,1.5,1.2c0.3,0,0.7-0.1,1.1-0.2l0.1,0.6c-0.5,0.1-0.9,0.2-1.3,0.2
+                                c-1.4,0-2.2-0.9-2.2-2.1c0-1.1,0.7-2.1,1.9-2.1c1.1,0,1.7,0.8,1.7,1.9C234.3,255.8,234.3,255.9,234.3,256z M233.6,255.4
+                                c0-0.6-0.4-1.1-1.1-1.1c-0.6,0-1,0.4-1.1,1.1H233.6z"/>
+                            <path class="st2" d="M181.7,269.2v-0.4c-0.3,0.3-0.8,0.5-1.3,0.5c-1.2,0-1.9-0.8-1.9-2c0-1.2,0.9-2.1,2-2.1c0.5,0,0.9,0.2,1.2,0.4
+                                v-3.3h0.8v7H181.7z M181.6,266.3c-0.2-0.3-0.6-0.5-1.2-0.5c-0.8,0-1.3,0.6-1.3,1.5c0,0.8,0.5,1.4,1.3,1.4c0.5,0,0.8-0.2,1.1-0.5
+                                V266.3z"/>
+                            <path class="st2" d="M185.9,269.2v-0.4c-0.3,0.3-0.7,0.5-1.2,0.5c-0.8,0-1.4-0.5-1.4-1.3c0-0.7,0.6-1.2,1.4-1.2
+                                c0.6,0,0.9,0.1,1.2,0.3v-0.2c0-0.7-0.3-1-1-1c-0.4,0-0.8,0.1-1,0.2l-0.1-0.6c0.4-0.1,0.9-0.2,1.3-0.2c1.1,0,1.7,0.5,1.7,1.7v2.4
+                                H185.9z M185.9,267.6c-0.4-0.2-0.6-0.3-1.1-0.3c-0.5,0-0.8,0.2-0.8,0.7c0,0.4,0.3,0.7,0.9,0.7c0.4,0,0.8-0.2,1-0.5V267.6z"/>
+                            <path class="st2" d="M190.4,269.2v-2.5c0-0.6-0.2-0.9-0.8-0.9c-0.4,0-0.9,0.3-1.2,0.6v2.8h-0.8v-4h0.7v0.6
+                                c0.4-0.4,0.9-0.7,1.5-0.7c0.9,0,1.3,0.6,1.3,1.4v2.7H190.4z"/>
+                            <path class="st2" d="M193.4,269.3c-0.6,0-1-0.2-1.4-0.5l0.4-0.5c0.3,0.3,0.7,0.4,1,0.4c0.5,0,0.7-0.2,0.7-0.6
+                                c0-0.8-1.9-0.6-1.9-1.8c0-0.6,0.5-1.2,1.4-1.2c0.4,0,0.9,0.2,1.2,0.4l-0.3,0.6c-0.3-0.2-0.5-0.3-0.9-0.3c-0.5,0-0.6,0.2-0.6,0.5
+                                c0,0.7,1.9,0.5,1.9,1.8C194.7,268.7,194.2,269.3,193.4,269.3z"/>
+                            <path class="st2" d="M200.6,269.2v-2.5c0-0.6-0.3-0.9-0.8-0.9c-0.4,0-1,0.3-1.2,0.6v2.8h-0.8v-7h0.8v3.6c0.4-0.4,0.9-0.7,1.4-0.7
+                                c0.9,0,1.4,0.6,1.4,1.4v2.7H200.6z"/>
+                            <path class="st2" d="M205.2,269.2v-0.6c-0.3,0.3-0.9,0.6-1.4,0.6c-0.9,0-1.4-0.6-1.4-1.4v-2.7h0.8v2.5c0,0.6,0.3,0.9,0.8,0.9
+                                c0.4,0,0.9-0.3,1.2-0.6v-2.8h0.8v4H205.2z"/>
+                            <path class="st2" d="M207.4,264.3c-0.3,0-0.5-0.2-0.5-0.5c0-0.3,0.2-0.5,0.5-0.5c0.3,0,0.5,0.2,0.5,0.5
+                                C207.9,264.1,207.7,264.3,207.4,264.3z M207.1,269.2v-4h0.8v4H207.1z"/>
+                            <path class="st2" d="M209.9,265.8v2.2c0,0.4,0.2,0.5,0.6,0.5c0.1,0,0.2,0,0.3,0l0.1,0.6c-0.2,0-0.4,0.1-0.7,0.1
+                                c-0.7,0-1.1-0.4-1.1-1.3v-2.2h-0.6v-0.1l0.6-0.6v-0.7l0.7-0.5v1.3h1.2v0.6H209.9z"/>
+                            <path class="st2" d="M215.9,269.3c-0.4,0-0.8-0.1-1.2-0.3v2.3H214v-6h0.7v0.4c0.3-0.3,0.8-0.5,1.3-0.5c1.1,0,1.9,0.8,1.9,2
+                                C217.9,268.3,217.1,269.3,215.9,269.3z M215.9,265.7c-0.5,0-0.9,0.2-1.2,0.5v2c0.2,0.3,0.7,0.5,1.2,0.5c0.8,0,1.3-0.6,1.3-1.5
+                                C217.2,266.4,216.7,265.7,215.9,265.7z"/>
+                            <path class="st2" d="M221.3,269.2v-0.4c-0.3,0.3-0.7,0.5-1.2,0.5c-0.8,0-1.4-0.5-1.4-1.3c0-0.7,0.6-1.2,1.4-1.2
+                                c0.6,0,0.9,0.1,1.2,0.3v-0.2c0-0.7-0.3-1-1-1c-0.4,0-0.8,0.1-1,0.2l-0.1-0.6c0.4-0.1,0.9-0.2,1.3-0.2c1.1,0,1.7,0.5,1.7,1.7v2.4
+                                H221.3z M221.3,267.6c-0.4-0.2-0.6-0.3-1.1-0.3c-0.5,0-0.8,0.2-0.8,0.7c0,0.4,0.3,0.7,0.9,0.7c0.4,0,0.8-0.2,1-0.5V267.6z"/>
+                            <path class="st2" d="M223.8,271.2H223l1.2-2.4l-1.7-3.6h0.8l1.2,2.9l1.2-2.9h0.8L223.8,271.2z"/>
+                            <path class="st2" d="M228.4,269.3c-0.6,0-1-0.2-1.4-0.5l0.4-0.5c0.3,0.3,0.7,0.4,1,0.4c0.5,0,0.7-0.2,0.7-0.6
+                                c0-0.8-1.9-0.6-1.9-1.8c0-0.6,0.5-1.2,1.4-1.2c0.4,0,0.9,0.2,1.2,0.4l-0.3,0.6c-0.3-0.2-0.5-0.3-0.9-0.3c-0.5,0-0.6,0.2-0.6,0.5
+                                c0,0.7,1.9,0.5,1.9,1.8C229.7,268.7,229.2,269.3,228.4,269.3z"/>
+                            <path class="st2" d="M182.1,278.8h-2.9c0.1,0.7,0.5,1.2,1.5,1.2c0.3,0,0.7-0.1,1.1-0.2l0.1,0.6c-0.5,0.1-0.9,0.2-1.3,0.2
+                                c-1.4,0-2.2-0.9-2.2-2.1c0-1.1,0.7-2.1,1.9-2.1c1.1,0,1.7,0.8,1.7,1.9C182.1,278.6,182.1,278.7,182.1,278.8z M181.4,278.2
+                                c0-0.6-0.4-1.1-1.1-1.1c-0.6,0-1,0.4-1.1,1.1H181.4z"/>
+                            <path class="st2" d="M185.8,280.6V280c-0.3,0.3-0.9,0.6-1.4,0.6c-0.9,0-1.4-0.6-1.4-1.4v-2.7h0.8v2.5c0,0.6,0.3,0.9,0.8,0.9
+                                c0.4,0,0.9-0.3,1.2-0.6v-2.8h0.8v4H185.8z"/>
+                            <path class="st2" d="M188.4,277.8v2.7h-0.8v-4h0.7v0.7c0.4-0.5,0.9-0.7,1.4-0.7v0.7C189.2,277.2,188.6,277.4,188.4,277.8z"/>
+                            <path class="st2" d="M192.3,280.7c-1.2,0-2-0.9-2-2.1s0.8-2.1,2-2.1s2,0.9,2,2.1S193.5,280.7,192.3,280.7z M192.3,277.1
+                                c-0.8,0-1.3,0.6-1.3,1.5c0,0.9,0.5,1.5,1.3,1.5c0.8,0,1.3-0.6,1.3-1.5C193.6,277.7,193.1,277.1,192.3,277.1z"/>
+                            <path class="st2" d="M197.2,280.7c-0.4,0-0.8-0.1-1.2-0.3v2.3h-0.8v-6h0.7v0.4c0.3-0.3,0.8-0.5,1.3-0.5c1.1,0,1.9,0.8,1.9,2
+                                C199.2,279.7,198.4,280.7,197.2,280.7z M197.2,277.1c-0.5,0-0.9,0.2-1.2,0.5v2c0.2,0.3,0.7,0.5,1.2,0.5c0.8,0,1.3-0.6,1.3-1.5
+                                C198.5,277.8,198,277.1,197.2,277.1z"/>
+                            <path class="st2" d="M203.7,278.8h-2.9c0.1,0.7,0.5,1.2,1.5,1.2c0.3,0,0.7-0.1,1.1-0.2l0.1,0.6c-0.5,0.1-0.9,0.2-1.3,0.2
+                                c-1.4,0-2.2-0.9-2.2-2.1c0-1.1,0.7-2.1,1.9-2.1c1.1,0,1.7,0.8,1.7,1.9C203.7,278.6,203.7,278.7,203.7,278.8z M203,278.2
+                                c0-0.6-0.4-1.1-1.1-1.1c-0.6,0-1,0.4-1.1,1.1H203z M201.6,276.1l-0.2-0.4l1.7-1.2l0.4,0.8L201.6,276.1z"/>
+                            <path class="st2" d="M208.1,278.8h-2.9c0.1,0.7,0.5,1.2,1.5,1.2c0.3,0,0.7-0.1,1.1-0.2l0.1,0.6c-0.5,0.1-0.9,0.2-1.3,0.2
+                                c-1.4,0-2.2-0.9-2.2-2.1c0-1.1,0.7-2.1,1.9-2.1c1.1,0,1.8,0.8,1.8,1.9C208.1,278.6,208.1,278.7,208.1,278.8z M207.4,278.2
+                                c0-0.6-0.4-1.1-1.1-1.1c-0.6,0-1,0.4-1.1,1.1H207.4z"/>
+                            <path class="st2" d="M211.8,280.6v-2.5c0-0.6-0.2-0.9-0.8-0.9c-0.4,0-0.9,0.3-1.2,0.6v2.8H209v-4h0.7v0.6c0.4-0.4,0.9-0.7,1.5-0.7
+                                c0.9,0,1.3,0.6,1.3,1.4v2.7H211.8z"/>
+                            <path class="st2" d="M214.7,280.7c-0.6,0-1-0.2-1.4-0.5l0.4-0.5c0.3,0.3,0.7,0.4,1,0.4c0.5,0,0.7-0.2,0.7-0.6
+                                c0-0.8-1.9-0.6-1.9-1.8c0-0.6,0.5-1.2,1.4-1.2c0.4,0,0.9,0.2,1.2,0.4l-0.3,0.6c-0.3-0.2-0.5-0.3-0.9-0.3c-0.5,0-0.6,0.2-0.6,0.5
+                                c0,0.7,1.9,0.5,1.9,1.8C216.1,280.1,215.5,280.7,214.7,280.7z"/>
+                            <path class="st2" d="M217.5,279.7c0.3,0,0.5,0.2,0.5,0.5c0,0.3-0.2,0.5-0.5,0.5c-0.3,0-0.5-0.2-0.5-0.5
+                                C217,279.9,217.2,279.7,217.5,279.7z"/>
+                        </g>
+                        <g>
+                            <g>
+                                <g>
+                                    <polyline class="st1" points="147.4,261.5 177,224 222.2,224                 "/>
+                                    <g>
+                                        <path class="st2" d="M148.9,262.6c-0.6,0.8-1.8,1-2.6,0.3c-0.8-0.6-1-1.8-0.3-2.6c0.6-0.8,1.8-1,2.6-0.3
+                                            C149.4,260.6,149.5,261.8,148.9,262.6z"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="title">
+                        <g>
+                            <g>
+                                <path class="st3" d="M37.2,12.1V1.3h2.5v8.5H44v2.3H37.2z"/>
+                                <path class="st3" d="M45.2,12.1V1.3H52v2.3h-4.3v1.9h3.9v2.2h-3.9v2.1H52v2.3H45.2z"/>
+                                <path class="st3" d="M66.1,6v5.2c-1.2,0.7-2.5,1.1-4.1,1.1c-3.2,0-5.7-2.3-5.7-5.6c0-3.3,2.5-5.6,5.8-5.6c1.4,0,2.5,0.4,3.6,0.9
+                                    l-1,2c-0.8-0.4-1.6-0.6-2.4-0.6c-2.1,0-3.3,1.3-3.3,3.2c0,2.1,1.4,3.3,3.2,3.3c0.8,0,1.2-0.1,1.6-0.3V8.2h-2.2V6H66.1z"/>
+                                <path class="st3" d="M74.4,12.1l-0.8-2h-3.7l-0.8,2h-2.5l5.1-10.9h0.3L77,12.1H74.4z M71.7,5.6l-1.1,2.6h2.1L71.7,5.6z"/>
+                                <path class="st3" d="M81,9.8h5.2v2.3H77l-0.1-0.3l5.3-8.2h-5V1.3h9l0.1,0.3L81,9.8z"/>
+                                <path class="st3" d="M93.1,12.3c-1.2,0-2.7-0.5-3.6-1.1l0.7-2.3c0.9,0.6,2,1,3,1c0.9,0,1.2-0.4,1.2-0.9c0-0.6-0.3-0.9-1.9-1.6
+                                    c-1.9-0.8-2.6-1.9-2.6-3.2c0-1.6,1.3-3.1,3.8-3.1c1.2,0,2.4,0.4,3,0.8L96,4.2c-0.6-0.4-1.6-0.9-2.4-0.9c-0.9,0-1.3,0.4-1.3,0.9
+                                    c0,0.7,0.5,0.9,1.9,1.5c2,0.9,2.6,1.8,2.6,3.2C96.9,10.6,95.6,12.3,93.1,12.3z"/>
+                                <path class="st3" d="M98.4,12.1V1.3h6.8v2.3h-4.3v1.9h3.9v2.2h-3.9v2.1h4.3v2.3H98.4z"/>
+                                <path class="st3" d="M112.7,12.3c-1.2,0-2.7-0.5-3.6-1.1l0.7-2.3c0.9,0.6,2,1,3,1c0.9,0,1.2-0.4,1.2-0.9c0-0.6-0.3-0.9-1.9-1.6
+                                    c-1.9-0.8-2.6-1.9-2.6-3.2c0-1.6,1.3-3.1,3.8-3.1c1.2,0,2.4,0.4,3,0.8l-0.6,2.2c-0.6-0.4-1.6-0.9-2.4-0.9c-0.9,0-1.3,0.4-1.3,0.9
+                                    c0,0.7,0.5,0.9,1.9,1.5c2,0.9,2.6,1.8,2.6,3.2C116.5,10.6,115.3,12.3,112.7,12.3z"/>
+                                <path class="st3" d="M122.9,3.6v8.5h-2.5V3.6h-3.2V1.3h9v2.3H122.9z"/>
+                                <path class="st3" d="M132.6,12.3c-3.3,0-5.5-2.4-5.5-5.6c0-3.2,2.2-5.6,5.6-5.6c3.3,0,5.5,2.4,5.5,5.6
+                                    C138.1,9.9,135.9,12.3,132.6,12.3z M132.6,3.4c-1.7,0-2.9,1.4-2.9,3.3c0,1.9,1.1,3.3,2.9,3.3s2.9-1.4,2.9-3.3
+                                    C135.5,4.8,134.3,3.4,132.6,3.4z"/>
+                                <path class="st3" d="M145.4,12.3c-3.5,0-5.9-2.4-5.9-5.6c0-3.2,2.4-5.6,5.9-5.6c1.3,0,2.4,0.4,3.4,0.9L148,4.2
+                                    c-0.8-0.4-1.7-0.7-2.6-0.7c-2,0-3.3,1.2-3.3,3.2s1.3,3.2,3.3,3.2c0.9,0,1.9-0.3,2.7-0.8l0.8,2.1
+                                    C147.9,11.9,146.6,12.3,145.4,12.3z"/>
+                                <path class="st3" d="M156.7,12.1l-4-5.1v5.1h-2.5V1.3h2.5V6l3.8-4.7h3L155,6.4l4.7,5.7H156.7z"/>
+                                <path class="st3" d="M160.9,12.1V1.3h6.8v2.3h-4.3v1.9h3.9v2.2h-3.9v2.1h4.3v2.3H160.9z"/>
+                                <path d="M175,12.2c-0.9,0-1.6-0.1-2.4-0.2V1.3c0.8-0.1,1.5-0.2,2.3-0.2c2.6,0,3.8,1.2,3.8,2.7c0,1.5-1.1,2.3-2.6,2.6
+                                    c1.7,0.2,2.8,1.3,2.8,2.7C178.9,10.8,177.6,12.2,175,12.2z M174.9,1.6c-0.7,0-1.2,0-1.9,0.1v4.6c0.6,0,0.9,0,1.4,0
+                                    c2.5,0,3.8-1,3.8-2.4C178.2,2.6,177.2,1.6,174.9,1.6z M174.6,6.7c-0.4,0-0.8,0-1.5,0v4.9c0.7,0.1,1.3,0.1,2,0.1
+                                    c2.3,0,3.5-1.1,3.5-2.6C178.5,7.6,177.2,6.7,174.6,6.7z"/>
+                                <path d="M180.7,12.1V1.3h5.9v0.4h-5.4v4.7h4.9v0.4h-4.9v4.8h5.4v0.4H180.7z"/>
+                                <path d="M196.6,12.1l-1.5-3.6h-5.3l-1.5,3.6h-0.5l4.6-11h0.1l4.6,11H196.6z M192.4,2.1l-2.5,5.9h4.9L192.4,2.1z"/>
+                                <path d="M202.7,12.2c-2.5,0-4-1.4-4-4.1V1.3h0.5v6.9c0,2.3,1.3,3.6,3.5,3.6c2.2,0,3.5-1.4,3.5-3.6V1.3h0.5v6.8
+                                    C206.7,10.7,205.1,12.2,202.7,12.2z"/>
+                                <path d="M214.2,12.2c-2.9,0-5.6-2-5.6-5.5c0-3.5,2.7-5.6,5.6-5.6c1.7,0,2.8,0.5,3.9,1.3l-0.2,0.4c-1.1-0.8-2.2-1.3-3.7-1.3
+                                    c-2.6,0-5.1,1.9-5.1,5.2c0,3.3,2.5,5.1,5.1,5.1c1.5,0,2.6-0.5,3.7-1.2l0.2,0.4C217,11.7,215.8,12.2,214.2,12.2z"/>
+                                <path d="M224.9,12.2c-3,0-5.3-2.4-5.3-5.5c0-3.2,2.3-5.5,5.3-5.5s5.3,2.4,5.3,5.5C230.2,9.9,227.9,12.2,224.9,12.2z M224.9,1.6
+                                    c-2.8,0-4.8,2.2-4.8,5.1c0,2.9,2,5.1,4.8,5.1c2.8,0,4.8-2.2,4.8-5.1C229.7,3.8,227.7,1.6,224.9,1.6z"/>
+                                <path d="M236.1,12.2c-2.5,0-4-1.4-4-4.1V1.3h0.5v6.9c0,2.3,1.3,3.6,3.5,3.6c2.2,0,3.5-1.4,3.5-3.6V1.3h0.5v6.8
+                                    C240.1,10.7,238.6,12.2,236.1,12.2z"/>
+                                <path d="M244.4,8.3c-0.4,0-1,0-1.4-0.1v3.9h-0.5V1.3c0.6-0.1,1.3-0.1,2-0.1c2.8,0,4.2,1.6,4.2,3.4C248.7,6.8,247.1,8.3,244.4,8.3
+                                    z M244.5,1.7c-0.5,0-1,0-1.5,0.1v6.1c0.4,0.1,0.9,0.1,1.4,0.1c2.3,0,3.7-1.3,3.7-3.3C248.2,3,246.9,1.7,244.5,1.7z"/>
+                                <path d="M68.6,27.1l-0.2-9.6l-4.2,7.6H64l-4.2-7.7l-0.2,9.6h-0.5l0.3-10.9l0.2,0l4.5,8.2l4.5-8.2l0.2,0L69,27.1H68.6z"/>
+                                <path d="M71.4,27.1V16.3h0.5v10.8H71.4z"/>
+                                <path d="M74.4,27.1V16.3h5.9v0.4h-5.4v4.7h4.9v0.4h-4.9v4.8h5.4v0.4H74.4z"/>
+                                <path d="M86.1,27.2c-2.5,0-4-1.4-4-4.1v-6.8h0.5v6.9c0,2.3,1.3,3.6,3.5,3.6s3.5-1.4,3.5-3.6v-6.9h0.5v6.8
+                                    C90.1,25.7,88.6,27.2,86.1,27.2z"/>
+                                <path d="M99.9,27.1L96.2,22l-3.7,5.1H92l4-5.5l-3.9-5.3h0.6l3.6,5l3.6-5h0.6l-3.9,5.3l4,5.5H99.9z"/>
+                                <path d="M114.8,27.2l-1.4-1.3c-0.9,0.8-2.1,1.3-3.5,1.3c-3,0-5.3-2.4-5.3-5.5c0-3.2,2.3-5.5,5.3-5.5s5.3,2.4,5.3,5.5
+                                    c0,1.6-0.6,3-1.5,3.9l1.4,1.3L114.8,27.2z M109.9,16.6c-2.8,0-4.8,2.2-4.8,5.1c0,2.9,2,5.1,4.8,5.1c1.2,0,2.3-0.4,3.2-1.2
+                                    l-2.5-2.3l0.3-0.3l2.5,2.3c0.9-0.9,1.4-2.2,1.4-3.6C114.7,18.8,112.7,16.6,109.9,16.6z"/>
+                                <path d="M121.1,27.2c-2.5,0-4-1.4-4-4.1v-6.8h0.5v6.9c0,2.3,1.3,3.6,3.5,3.6s3.5-1.4,3.5-3.6v-6.9h0.5v6.8
+                                    C125.2,25.7,123.6,27.2,121.1,27.2z"/>
+                                <path d="M127.6,27.1V16.3h5.9v0.4h-5.4v4.7h4.9v0.4h-4.9v4.8h5.4v0.4H127.6z"/>
+                                <path d="M138.1,27.1V16.3h0.5v10.4h5.4v0.4H138.1z"/>
+                                <path d="M144.4,18.7l-0.2-0.1c0.4-0.4,0.7-0.8,0.7-1.3c-0.4-0.1-0.6-0.3-0.6-0.6c0-0.3,0.2-0.5,0.5-0.5c0.3,0,0.6,0.3,0.6,0.8
+                                    C145.4,17.7,144.8,18.4,144.4,18.7z"/>
+                                <path d="M147,27.1V16.3h5.9v0.4h-5.4v4.7h4.9v0.4h-4.9v4.8h5.4v0.4H147z M149.6,15.4l-0.2-0.3l2.7-1.8l0.3,0.5L149.6,15.4z"/>
+                                <path d="M154.8,27.1V16.3h0.5v10.4h5.4v0.4H154.8z"/>
+                                <path d="M161.9,27.1V16.3h5.9v0.4h-5.4v4.7h4.9v0.4h-4.9v4.8h5.4v0.4H161.9z"/>
+                                <path d="M174.8,27.2c-2.9,0-5.6-2-5.6-5.5c0-3.5,2.7-5.6,5.6-5.6c1.7,0,2.8,0.5,3.9,1.3l-0.2,0.4c-1.1-0.8-2.2-1.3-3.7-1.3
+                                    c-2.6,0-5.1,1.9-5.1,5.2c0,3.3,2.5,5.1,5.1,5.1c1.5,0,2.6-0.5,3.7-1.2l0.2,0.4C177.6,26.7,176.5,27.2,174.8,27.2z"/>
+                                <path d="M184.1,16.7v10.4h-0.5V16.7h-3.7v-0.4h7.9v0.4H184.1z"/>
+                                <path d="M195.5,27.1l-3-4.5c-0.4,0.1-0.7,0.1-1.1,0.1c-0.4,0-1,0-1.4-0.1v4.5h-0.5V16.4c0.8-0.1,1.4-0.2,2.1-0.2
+                                    c2.5,0,4,1.2,4,3.2c0,1.4-1,2.6-2.6,3.1l3.1,4.6H195.5z M191.5,16.7c-0.6,0-1,0-1.6,0.1v5.4c0.4,0.1,0.9,0.1,1.4,0.1
+                                    c2.3,0,3.8-1.1,3.8-2.9C195.1,17.8,193.9,16.7,191.5,16.7z"/>
+                                <path d="M197.8,27.1V16.3h0.5v10.8H197.8z"/>
+                                <path d="M205.9,27.2c-2.9,0-5.6-2-5.6-5.5c0-3.5,2.7-5.6,5.6-5.6c1.7,0,2.8,0.5,3.9,1.3l-0.2,0.4c-1.1-0.8-2.2-1.3-3.7-1.3
+                                    c-2.6,0-5.1,1.9-5.1,5.2c0,3.3,2.5,5.1,5.1,5.1c1.5,0,2.6-0.5,3.7-1.2l0.2,0.4C208.7,26.7,207.5,27.2,205.9,27.2z"/>
+                                <path d="M211.8,27.1V16.3h0.5v10.8H211.8z"/>
+                                <path d="M218.1,16.7v10.4h-0.5V16.7h-3.7v-0.4h7.9v0.4H218.1z"/>
+                                <path d="M223.5,27.1V16.3h5.9v0.4H224v4.7h4.9v0.4H224v4.8h5.4v0.4H223.5z M226.1,15.4l-0.2-0.3l2.7-1.8l0.3,0.5L226.1,15.4z"/>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+
+                <div class="caption">
+                    <b>SOURCE :</b> Frontier Economics à partir de Gas Infrastructure Europe and Geth et al.
+                    <br><br><br>
+                    <span class="scene-baloonz-cap1"><b>Le gaz naturel a l'avantage de se laisser stocker. Le potentiel total de huit pays européens (dont la Suisse) représente ainsi une réserve de 550 TWh, soit l'équivalent de dix fois la consommation d'électricité annuelle de la Suisse.</b></span>
+                    <br><br>
+                    <span class="scene-baloonz-cap2"><b>La capacité de stockage de l'électricité de ces mêmes huit pays est de 20 Twh, soit 30 fois inférieures aux réserves de gaz.</b></span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                 <p>
+                    Ce bilan ne suffit pas pour satisfaire à terme les objectifs carbone fixés à l’horizon 2050. Mais il pourrait garantir la sécurité énergétique du pays, remise en cause par l’arrêt en 2022 des centrales nucléaires allemandes et le déclassement des anciennes centrales nucléaires françaises. Ces deux pays pourront-ils encore exporter l’électricité dont la Suisse manque en hiver? Des centrales électriques à gaz CCF, c’est-à-dire produisant aussi du chauffage à distance (avec ainsi un rendement énergétique de 90%), pourraient mettre la Suisse à l’abri d’une grave pénurie. Et des technologies de captage du CO2 pourraient réduire à zéro les émissions de gaz à effet de serre de ces centrales de cogénération.
+                </p>
+                <p>
+                    Autre vision d’avenir: l’expression anglaise power-to-gas, c’est-à-dire la conversion de courant électrique en gaz. Selon le conseiller national vaudois Roger Nordmann, spécialiste de la transition énergétique, «le potentiel de stockage énergétique de longue durée du gaz peut jouer un grand rôle ces prochaines décennies.»
+                </p>
+               
+            </div>
+        </section>
+
+        <section class="gallery small scene-sun-gaz" style="height: 60vh">
+            <div class="layout">
+                <svg class="sun-gaz" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.09 84.64"><defs><style>.cls-1{isolation:isolate;}.cls-13,.cls-14,.cls-2{fill:none;stroke-miterlimit:10;}.cls-2{stroke:#221f20;stroke-width:0.39px;}.cls-3{font-size:3.86px;font-family:VerlagCompressed-Bold, Verlag Compressed;}.cls-22,.cls-3{fill:#221f20;}.cls-16,.cls-19,.cls-3{font-weight:700;}.cls-4{letter-spacing:-0.03em;}.cls-5{letter-spacing:0em;}.cls-6{letter-spacing:0.01em;}.cls-7{letter-spacing:-0.01em;}.cls-8{letter-spacing:0em;}.cls-9{letter-spacing:0.01em;}.cls-10{letter-spacing:-0.01em;}.cls-11{letter-spacing:-0.01em;}.cls-12{letter-spacing:-0.01em;}.cls-13,.cls-14{stroke:#949598;stroke-width:0.1px;}.cls-14{stroke-dasharray:1 1;}.cls-15{fill:#457b87;}.cls-16,.cls-19{font-size:8px;font-family:MyriadPro-Bold, Myriad Pro;}.cls-16{fill:#4f95d3;}.cls-17{letter-spacing:0.01em;}.cls-18,.cls-19{fill:#f2cd32;}.cls-18{mix-blend-mode:multiply;}.cls-20{letter-spacing:0.01em;}.cls-21{letter-spacing:-0.01em;}.cls-22{font-size:8.59px;font-family:Verlag-XLight, Verlag;letter-spacing:-0.02em;}.cls-23,.cls-25{fill:#cc3e2c;font-family:Verlag-Black, Verlag;}.cls-24,.cls-25{letter-spacing:-0.02em;}</style></defs><title>sun-gaz</title><g class="cls-1"><g id="Bordel"><line class="cls-2" x1="4.11" y1="78.72" x2="4.11" y2="80.88"/><line class="cls-2" x1="17.14" y1="78.72" x2="17.14" y2="80.88"/><line class="cls-2" x1="30.16" y1="78.72" x2="30.16" y2="80.88"/><line class="cls-2" x1="43.18" y1="78.72" x2="43.18" y2="80.88"/><line class="cls-2" x1="56.2" y1="78.72" x2="56.2" y2="80.88"/><line class="cls-2" x1="69.22" y1="78.72" x2="69.22" y2="80.88"/><line class="cls-2" x1="82.24" y1="78.72" x2="82.24" y2="80.88"/><line class="cls-2" x1="95.26" y1="78.72" x2="95.26" y2="80.88"/><line class="cls-2" x1="108.28" y1="78.72" x2="108.28" y2="80.88"/><line class="cls-2" x1="121.31" y1="78.72" x2="121.31" y2="80.88"/><line class="cls-2" x1="134.33" y1="78.72" x2="134.33" y2="80.88"/><line class="cls-2" x1="147.35" y1="78.72" x2="147.35" y2="80.88"/><text class="cls-3" transform="translate(0.01 83.56)">Janvier</text><text class="cls-3" transform="translate(13.29 83.56)"><tspan class="cls-4">F</tspan><tspan class="cls-5" x="1.27" y="0">é</tspan><tspan x="2.58" y="0">vrier</tspan></text><text class="cls-3" transform="translate(27.37 83.56)">Ma<tspan class="cls-6" x="3.38" y="0">r</tspan><tspan x="4.37" y="0">s</tspan></text><text class="cls-3" transform="translate(40.56 83.56)"><tspan class="cls-7">A</tspan><tspan x="1.6" y="0">vril</tspan></text><text class="cls-3" transform="translate(54.15 83.56)">Mai</text><text class="cls-3" transform="translate(66.82 83.56)">Juin</text><text class="cls-3" transform="translate(78.78 83.56)">Juillet</text><text class="cls-3" transform="translate(92.56 83.56)"><tspan class="cls-8">A</tspan><tspan x="1.66" y="0">oût</tspan></text><text class="cls-3" transform="translate(102.18 83.56)"><tspan class="cls-9">S</tspan><tspan x="1.43" y="0">eptemb</tspan><tspan class="cls-10" x="10.03" y="0">r</tspan><tspan x="10.95" y="0">e</tspan></text><text class="cls-3" transform="translate(116.87 83.56)">Octob<tspan class="cls-10" x="6.65" y="0">r</tspan><tspan x="7.56" y="0">e</tspan></text><text class="cls-3" transform="translate(128.58 83.56)">N<tspan class="cls-11" x="1.79" y="0">o</tspan><tspan class="cls-12" x="3.15" y="0">v</tspan><tspan x="4.39" y="0">emb</tspan><tspan class="cls-10" x="9.31" y="0">r</tspan><tspan x="10.23" y="0">e</tspan></text><text class="cls-3" transform="translate(141.75 83.56)">Décemb<tspan class="cls-10" x="9.11" y="0">r</tspan><tspan x="10.02" y="0">e</tspan></text><line class="cls-13" x1="4.11" y1="16.51" x2="4.11" y2="17.01"/><line class="cls-14" x1="4.11" y1="18.01" x2="4.11" y2="77.72"/><line class="cls-13" x1="4.11" y1="78.22" x2="4.11" y2="78.72"/><line class="cls-13" x1="17.14" y1="16.51" x2="17.14" y2="17.01"/><line class="cls-14" x1="17.14" y1="18.01" x2="17.14" y2="77.72"/><line class="cls-13" x1="17.14" y1="78.22" x2="17.14" y2="78.72"/><line class="cls-13" x1="30.16" y1="16.51" x2="30.16" y2="17.01"/><line class="cls-14" x1="30.16" y1="18.01" x2="30.16" y2="77.72"/><line class="cls-13" x1="30.16" y1="78.22" x2="30.16" y2="78.72"/><line class="cls-13" x1="43.18" y1="16.51" x2="43.18" y2="17.01"/><line class="cls-14" x1="43.18" y1="18.01" x2="43.18" y2="77.72"/><line class="cls-13" x1="43.18" y1="78.22" x2="43.18" y2="78.72"/><line class="cls-13" x1="56.2" y1="16.51" x2="56.2" y2="17.01"/><line class="cls-14" x1="56.2" y1="18.01" x2="56.2" y2="77.72"/><line class="cls-13" x1="56.2" y1="78.22" x2="56.2" y2="78.72"/><line class="cls-13" x1="69.22" y1="16.51" x2="69.22" y2="17.01"/><line class="cls-14" x1="69.22" y1="18.01" x2="69.22" y2="77.72"/><line class="cls-13" x1="69.22" y1="78.22" x2="69.22" y2="78.72"/><line class="cls-13" x1="82.24" y1="16.51" x2="82.24" y2="17.01"/><line class="cls-14" x1="82.24" y1="18.01" x2="82.24" y2="77.72"/><line class="cls-13" x1="82.24" y1="78.22" x2="82.24" y2="78.72"/><line class="cls-13" x1="95.26" y1="16.51" x2="95.26" y2="17.01"/><line class="cls-14" x1="95.26" y1="18.01" x2="95.26" y2="77.72"/><line class="cls-13" x1="95.26" y1="78.22" x2="95.26" y2="78.72"/><line class="cls-13" x1="108.28" y1="16.51" x2="108.28" y2="17.01"/><line class="cls-14" x1="108.28" y1="18.01" x2="108.28" y2="77.72"/><line class="cls-13" x1="108.28" y1="78.22" x2="108.28" y2="78.72"/><line class="cls-13" x1="121.31" y1="16.51" x2="121.31" y2="17.01"/><line class="cls-14" x1="121.31" y1="18.01" x2="121.31" y2="77.72"/><line class="cls-13" x1="121.31" y1="78.22" x2="121.31" y2="78.72"/><line class="cls-13" x1="134.33" y1="16.51" x2="134.33" y2="17.01"/><line class="cls-14" x1="134.33" y1="18.01" x2="134.33" y2="77.72"/><line class="cls-13" x1="134.33" y1="78.22" x2="134.33" y2="78.72"/><line class="cls-13" x1="147.35" y1="16.51" x2="147.35" y2="17.01"/><line class="cls-14" x1="147.35" y1="18.01" x2="147.35" y2="77.72"/><line class="cls-13" x1="147.35" y1="78.22" x2="147.35" y2="78.72"/></g><g id="gaz"><polygon class="cls-15" points="3.92 16.74 3.92 78.72 147.55 78.72 147.55 28.3 134.91 31.88 121.8 47.97 108.69 52.98 95.46 59.29 81.63 56.79 69.36 57.86 56.01 53.57 43.73 44.04 29.66 39.51 17.15 30.33 3.92 16.74"/><text class="cls-16" transform="translate(12.58 22.75)"><tspan class="cls-17">G</tspan><tspan x="5.52" y="0">az</tspan></text></g><g id="sun"><polyline class="cls-18" points="3.92 78.72 4.82 72.89 5.65 77.8 7.04 72.52 7.87 78.72 8.7 76.5 9.26 77.43 10.09 75.58 10.92 76.87 11.66 74.56 12.77 70.21 14.07 78.17 15.55 65.31 16.47 77.15 18.14 68.92 18.14 75.85 18.69 69.01 19.34 75.67 20.27 70.67 20.91 75.39 22.49 56.05 23.23 73.26 24.06 68.17 25.36 75.02 26.28 59.94 27.3 70.21 27.48 62.72 28.23 69.66 29.34 57.9 30.45 71.04 31 68.17 31.37 70.58 32.57 49.39 33.41 57.72 34.05 47.45 35.16 72.25 36.46 61.98 38.13 39.21 39.33 55.13 39.79 44.76 41.09 57.72 41.83 53.09 42.84 58.09 43.77 38.2 44.88 59.57 45.44 55.41 45.8 61.23 46.64 58.64 46.92 60.49 47.84 42.82 48.58 60.03 49.23 40.41 49.78 58.46 50.34 54.94 50.89 59.94 51.73 31.35 52.38 60.31 53.12 54.66 53.39 62.72 54.04 45.23 55.06 64.29 55.8 35.7 57.09 54.11 58.39 33.38 59.41 51.24 60.24 35.23 61.26 49.58 62.18 28.39 63.48 45.41 64.13 32.83 65.42 52.91 65.79 45.32 66.35 51.7 67 39.95 67.36 44.39 68.01 32.46 68.84 44.67 69.49 32.64 70.23 46.06 71.25 29.59 72.73 45.04 73.19 42.08 73.84 53.83 74.12 42.08 75.23 56.89 75.42 49.3 76.43 57.07 76.8 38.47 77.27 41.53 77.82 34.59 78.56 42.73 79.02 40.05 80.13 57.81 80.69 39.21 81.61 47.82 82.08 44.95 82.35 48.93 82.72 33.85 83.28 48.84 83.74 37.45 85.13 63.83 85.31 60.96 85.69 63.92 87.44 40.41 87.91 45.97 88.37 43.75 89.2 53.19 89.94 44.95 90.22 47.82 90.59 35.14 92.25 69.01 93 38.01 93.83 51.98 94.29 47.82 94.94 53.28 95.59 45.23 96.14 48.84 96.6 37.83 97.16 48.65 97.53 43.47 98.18 48.37 99.19 38.38 100.12 64.94 101.6 45.41 102.34 65.12 102.62 59.2 103.54 65.4 103.91 56.89 105.3 65.58 105.67 54.85 106.5 60.77 106.78 54.57 107.43 60.68 108.36 54.3 108.91 60.22 109.74 56.05 110.3 60.49 110.76 57.9 111.13 65.12 111.41 58.64 112.52 67.71 113.26 60.03 114 67.8 114.56 70.39 115.02 65.49 115.39 69.84 116.13 65.03 116.41 69.47 117.61 54.02 118.53 58.37 119.46 68.36 120.29 71.23 120.94 72.89 121.59 67.99 122.7 72.71 123.62 65.49 124.36 73.17 124.92 67.9 125.84 73.17 126.21 71.69 127.14 76.32 127.79 75.02 128.71 76.5 129.27 71.6 130.28 74.93 130.75 72.62 132.13 77.43 132.69 70.21 133.8 75.95 134.54 74.19 135.65 76.69 136.02 75.58 136.85 77.06 138.06 77.24 138.24 71.6 139.07 77.43 140.19 77.24 140.56 73.17 142.04 77.33 142.31 75.95 143.05 77.43 145.09 77.52 145.92 74.1 146.38 77.7 147.03 73.91 147.58 78.72 3.61 78.72"/><text class="cls-19" transform="translate(84.93 34.12)"><tspan class="cls-20">S</tspan><tspan x="4.38" y="0">olai</tspan><tspan class="cls-21" x="17.61" y="0">r</tspan><tspan x="20.58" y="0">e</tspan></text></g><g id="curves_bg"><text class="cls-22" transform="translate(3.33 8.57)">SOLEIL EN <tspan class="cls-23" x="39.86" y="0">ÉTÉ</tspan><tspan class="cls-24" x="55.6" y="0">, GAZ EN </tspan><tspan class="cls-25" x="89.92" y="0">HIVER </tspan></text></g></g></svg>
+
+                <div class="caption">
+                    <b>SOURCE :</b> Frontier Economics à partir de Gas Infrastructure Europe and Geth et al.
+                    <br><br><br>
+                    <span class="scene-sun-gaz-cap1"><b>L'énergie solaire est bien plus productive en été.</b></span>
+                    <br><br>
+                    <span class="scene-sun-gaz-cap2"><b>Mais la demande en chaleur est hivernale. Il y a donc nécessité à pouvoir stocker les énergies renouvelables intermittentes afin de compenser ces différences saisonnières entre production et consommation d'énergie. </b></span>
+                </div>
+            </div>
+        </section>
+
+       <section class="padding-bottom">
+           <div class="container">
+                <p>
+                   Cette transformation de l’électricité en gaz renouvelable est pertinente malgré les inévitables pertes énergétiques de pareille transformation car une part toujours plus grande de l’énergie électrique en Suisse sera fournie par le soleil photovoltaïque, une source d’énergie intermittente et difficilement prévisible. Il faudra donc des moyens de stockage saisonnier de l’électricité excédentaire estivale pour compenser les mois durant lesquels le rayonnement solaire est insuffisant. Et comme l’électricité ne se laisse stocker qu’à très faible échelle, il faut la convertir en d’autres vecteurs. En hydrogène par exemple, au moyen de l’électrolyse de l’eau, avec un excellent bilan écologique.
+                </p>
+           </div>
+       </section>
+
+
+        <section class="gallery hero">
+            <div class="layout">
+                <img class="zoom" src="img/article/section2.jpg">
+                <div class="caption">
+                    L’installation de biogaz de Lavigny (VD) produit chaque année l’équivalent de 1,5 millions de litres d’essence.
+                </div>
+            </div>
+        </section>
+        <section class="anchor-chasseral padding-bottom">
+            <div class="container">
+                <h3 class="inter-titre title">Le Biogaz, une aventure en marche</h3>
+                <p>
+                  Il existe déjà – on l’oublie trop souvent – un gaz écologique en Suisse produit à une échelle industrielle: le biogaz. Certes, le biogaz suisse ne représente aujourd’hui que 3% du gaz naturel consommé. Mais la production nationale, actuellement assurée par 35 installations, pourrait être multipliée par dix environ.
+                </p> 
+                <div class="block-content left">
+                    <span class="number "><span class="counter-one">329</span>'000</span>
+                    <span class="number-txt">chauffages au gaz en Suisse</span>
+                </div>
+                <p>
+                  Le principe de cette production gazière consiste à faire fermenter des déchets organiques et végétaux par un digesteur. Il ressort de cette fermentation non seulement du méthane, qui peut être injecté dans le réseau après une étape de purification, mais aussi un compost de grande qualité, très apprécié dans l’agriculture.
+                </p>
+                <p>
+                    Le bilan carbone de ce recyclage de déchets est excellent, en dépit du transport des déchets jusqu’aux installations. D’autres méthodes de production de biogaz existent déjà en Suisse, notamment par le traitement des eaux usées de stations d’épuration. Là aussi, Roger Nordmann est très favorable à cette filière qui permet de valoriser des déchets et ainsi d’améliorer le bilan carbone national.
+                </p>
+            </div>
+        </section>
+
+       
+
+        <section class="gallery hero">
+            <div class="layout">
+                <img class="zoom" src="img/article/section3.jpg">
+                <div class="caption">
+                   Des camions de livraison roulent déjà à l’hydrogène en Suisse.
+                </div>
+            </div>
+        </section>
+        <section class="anchor-chasseral padding-bottom">
+            <div class="container">
+                <h3 class="inter-titre title">L’hydrogène: l’avenir de la mobilité?</h3>
+                <p>
+                   Le gaz est déjà, avec 145 stations-services, une option possible pour la mobilité. Et en 2020, 20% de biogaz seront ajoutés au carburant. Le gaz naturel liquide est aussi un carburant utilisé par des entreprises de transport en Suisse pour réduire les émissions de CO2 de leurs poids lourds.
+                </p>
+                <div class="block-content right">
+                    <span class="number"><span class="counter-two">20</span>'000</span>
+                    <span class="number-txt">kilomètres de conduites de gaz en Suisse</span>
+                </div>
+                <p>
+                    Mais l’autre piste gazeuse de la mobilité, c’est l’hydrogène. Electrifier la mobilité est encore la piste principale pour la décarboner. Mais se pose le problème des batteries, qu’il faudrait fabriquer massivement tandis que les matières premières, notamment le lithium, se raréfient. La pile à combustible permet d’électrifier la mobilité en contournant cet écueil et l’hydrogène pour la faire fonctionner peut être produit avec de l’électricité renouvelable grâce à la technique de l’électrolyse. Enfin, la seule émission de cette technologie n’est autre que de l’eau. Certaines marques automobiles ont déjà développé des modèles de voitures et de camions très performants.
+                </p>
+
+                <div class="block-content left">
+                     <span class="number"><span class="counter-three">35</span>%</span>
+                    <span class="number-txt">seulement du gaz naturel importé en Suisse provient de Russie. 57% provient de l’Union européenne et de la Norvège.</span>
+                </div>
+                
+                <p>
+                    En revanche, l’infrastructure de distribution reste à créer. En Suisse, de grandes sociétés qui possèdent 1500 stations-services en tout se sont associées en 2018 pour créer un réseau de distribution d’hydrogène efficace sur l’ensemble du territoire d’ici à 2023. D’autres pays se lancent résolument dans cette filière. Le Japon a par exemple décidé de faire de l’hydrogène la clé de voûte de sa politique énergétique.
+
+                </p>
+                <p>
+                    Pour faciliter la distribution à large échelle de ce nouveau vecteur énergétique, dont la demande mondiale devrait augmenter de manière exponentielle, l’industrie gazière en Europe étudie déjà la possibilité de créer un réseau d’hydrogène pur, mais elle évalue aussi le potentiel de mélanges hydrogène-gaz naturel, avec à la clé une amélioration de l’empreinte écologique.
+                </p>
+            </div>
+        </section>
+
+        
+
+        <section class="gallery hero">
+            <div class="layout">
+                <img class="zoom" src="img/article/section4.jpg">
+                <div class="caption">
+                    Un immeuble locatif zurichois novateur combine plusieurs vecteurs énergétiques, dont le gaz, pour le chauffage, la production d’électricité et même la mobilité.
+                </div>
+            </div>
+        </section>
+        <section class="anchor-chasseral padding-bottom">
+            <div class="container">
+                <h3 class="inter-titre title">Le méthane de synthèse: un gaz propre</h3>
+                <p>
+                   Le gaz naturel fossile a un frère jumeau écologique: le méthane de synthèse, produit à partir d’hydrogène et de CO2. La méthanation, c’est-à-dire la production de ce méthane, demande de l’énergie. Mais, comme c’est le cas avec l’hydrogène, cette technologie peut permettre de convertir l’électricité en gaz et ainsi stocker l’énergie douce excédentaire pour la mettre à disposition plus tard pour des usages domestiques, de transport ou autres. Ce méthane artificiel a aussi l’avantage de pouvoir être injecté dans le réseau gazier déjà existant, contrairement à l’hydrogène pur. L’industrie gazière suisse a d’ores et déjà lancé des projets pilotes prometteurs de méthanation.
+                </p>
+               
+            </div>
+        </section>
+
+        <!-- GRANDE IMAGE ENTRE 2 PARAGRAPHES -->
+        <section class="gallery big" style="padding:25px 0 50px 0">
+            <div class="layout">
+                <img class="zoom" src="img/article/flat.png">
+                <div class="caption">
+                    <b>Comment produit-on de l'hydrogène et du méthane "verts"?</b><br>L'électrolyseur est la pièce maîtresse pour convertir de l'énergie en hydrogène. Il décompose l'eau en ses deux composants, l'hydrogène (H2) et l'oxygène (O2) grâce à un courant électrique. Cet hydrogène peut être ensuite utilisé de manière différente ou être converti en méthane en le combinant avec du gaz carbonique (CO2).
+                </div>
+            </div>
+        </section> 
+
+        <section class="padding-bottom">
+            <div class="container">
+                 <p>
+                    Parmi ces prototypes power-to-gas, celui conçu par la Haute Ecole technique de Rapperswil, en collaboration avec l’EPFL, relève depuis 2017 le défi de produire du méthane climatiquement neutre. Cette installation dissocie, d’une part, l’hydrogène et l’oxygène de l’eau par une électrolyse, dont le courant est fourni par des panneaux solaires; d’autre part, elle tire le CO2 de l’air ambiant pour la deuxième étape de la méthanation.
+                </p>
+                <p>
+                   Enfin, les deux gaz ainsi obtenus sur place interagissent dans un réacteur pour créer du méthane, qui peut ensuite alimenter des véhicules à gaz naturel ou être injecté dans le réseau.
+                </p>
+                <p>
+                    Dans un autre projet pilote de power-to-gas dans le quartier de Leimbach, à Zurich, la méthanation a carrément été intégrée à un bâtiment locatif. dont les façades sont recouvertes à 95% de modules solaires de nouvelle génération, des modules qui ne se remarquent pas à l’œil nu. Le surplus estival de ce courant propre est là aussi converti en hydrogène, puis en méthane. Un dispositif ultra-sophistiqué régule l’ensemble des besoins en électricité et en chaleur du bâtiment en fonction notamment de l’ensoleillement. Et la mobilité n’est pas oubliée dans ce concept futuriste: les locataires ont à disposition des raccordements pour des voitures fonctionnant aussi bien à l’électricité qu’au gaz naturel comprimé (GNC). Ce bâtiment zurichois fait ainsi la démonstration des avantages du couplage de différents vecteurs énergétiques, notamment pour contourner les contraintes saisonnières.
+                </p>
+            </div>
+        </section>
+
+        <section class="gallery hero">
+            <div class="layout">
+                <img class="zoom" src="img/article/section5.jpg">
+                <div class="caption">
+                   Le démonstrateur de mobilité Move à Dubendorf se veut un modèle possible de station de charge et de remplissage du futur.
+                </div>
+            </div>
+        </section>
+        <section class="anchor-chasseral padding-bottom">
+            <div class="container">
+                <h3 class="inter-titre title">Des infrastructures gazières innovantes et un défi pour 2030</h3>
+                <p>
+                   Convergence et complémentarité des différents systèmes énergétiques (électricité, gaz et chauffage à distance), power-to-gas, couplage chaleur-force, pile à combustible, gaz comprimé… Toutes les pistes prometteuses de l’état gazeux devraient faciliter le très délicat défi énergétique que la Suisse doit relever d’ici à 2050 pour s’approcher de la neutralité carbone et d’une plus grande indépendance énergétique.
+                </p>
+                <div class="block-content left">
+                     <span class="number"><span class="counter-four">30</span>%</span>
+                    <span class="number-txt">de gaz renouvelables d’ici à 2030. Tel est l’objectif de l’industrie gazière en Suisse.</span>
+                </div>
+                <p>
+                   Mais ces pistes demandent d’importants investissements pour passer des projets pilotes à l’application à large échelle et ont donc besoin aussi de soutien politique.
+                </p>
+                <p>
+                    La Stratégie énergétique 2050 du Conseil fédéral ne les intègre pourtant pas (encore) dans ses plans. L’industrie gazière rappelle dans ce contexte que ses 20 000 km de conduites sur le territoire national constituent un réseau incontournable pour transporter et stocker les vecteurs énergétiques de l’avenir. Elle s’est aussi lancé un défi d’ici à 2030 pour rappeler que le gaz a un rôle majeur à jouer dans une politique énergétique durable: porter la part des gaz renouvelables à 30% du marché de la chaleur.
+                </p>
+            </div>
+        </section>
+
+      
+       
+        <footer>
+            <!-- <hr class="end"> -->
+            <!-- <div class="container">
+                <h5>Nos grands formats</h5>
+                
+                <div class="row">
+                	<a href="https://labs.letemps.ch/interactive/2017/bol-dor-mirabaud-epopee-technologique/" target="blank" class="footer__link">
+                		<div class="teaser">
+                			<div class="teaser-bg" style="background: url('img/thumb-boldor.jpg');"></div>
+                			<div class="caption">Le Bol d'Or, une épopée technologique</div>
+                		</div>
+                	</a>
+                
+                	<a href="https://labs.letemps.ch/interactive/2016/longread-parc-adula/" target="blank" class="footer__link">
+                		<div class="teaser">
+                			<div class="teaser-bg" style="background: url('img/thumb_adula.jpg');"></div>
+                			<div class="caption">Parc Adula: Bataille dans la montagne</div>
+                		</div>
+                	</a>
+                </div>
+                
+                <div class="row">
+                <a href="https://labs.letemps.ch/interactive/2016/longread-fioul-lourd/" target="blank" class="footer__link">
+                		<div class="teaser">
+                			<div class="teaser-bg" style="background: url('img/thumb_fioul.jpg');"></div>
+                			<div class="caption">Fioul lourd, le sang impur de la globalisation</div>
+                		</div>
+                	</a>
+                
+                	<a href="https://labs.hebdo.ch/interactive/2016/longread-horlogerie-japonaise/" target="blank" class="footer__link">
+                		<div class="teaser">
+                			<div class="teaser-bg" style="background: url('img/thumb-horlogerie-japonaise.jpg');"></div>
+                			<div class="caption">Horlogerie japonaise – A la conquête du monde</div>
+                		</div>
+                	</a>
+                </div>
+                
+                <div class="row">
+                	<a href="https://labs.letemps.ch/interactive/2016/longread-gothard/" target="blank" class="footer__link">
+                		<div class="teaser">
+                			<div class="teaser-bg" style="background: url('img/thumb_gothard.jpg');"></div>
+                			<div class="caption">Les oubliés du Gothard</div>
+                		</div>
+                	</a>
+                	<a href="https://labs.letemps.ch/interactive/2016/tchernobyl-30-ans/" target="blank" class="footer__link">
+                		<div class="teaser">
+                			<div class="teaser-bg" style="background: url('img/thumb-tchernobyl.jpg');"></div>
+                			<div class="caption">30 ans après, voyage au cœur de la zone </div>
+                		</div>
+                	</a>
+                </div>
+                
+                <div class="row">
+                	<a href="https://labs.letemps.ch/interactive/2016/shenzhen/" target="blank" class="footer__link">
+                		<div class="teaser">
+                			<div class="teaser-bg" style="background: url('img/thumb_shenzhen.jpg');"></div>
+                			<div class="caption">Shenzhen, de la fumée des usines aux ateliers d'artistes</div>
+                		</div>
+                	</a>
+                	<a href="https://labs.letemps.ch/interactive/2016/montre-suisse/" target="blank" class="footer__link">
+                		<div class="teaser">
+                			<div class="teaser-bg" style="background: url('img/thumb-montre.jpg');"></div>
+                			<div class="caption">Comment j'ai fabriqué ma montre en 8 heures</div>
+                		</div>
+                	</a>
+                	
+                </div>
+                
+                </div> -->
+            <div class="credits">
+                Texte: Philippe Clot<br>
+                Infographies: Manuel Forney<br>
+                Format Web: César Greppin
+            </div>
+        </footer>
+        {{ block('footer_brand') }}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>-->
+        <script src="js/jquery.lazyload.js?v=1.9.7"></script>
+        <script src="js/intro-control.js"></script>
+        <script src="js/tilt.jquery.js"></script>
+        <script src="js/viewport.js"></script>
+        <script src="js/lity.js"></script>
+        <script src="js/main.js"></script>
+       
+        <script src="js/zoom.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
+    </body>
+</html>
