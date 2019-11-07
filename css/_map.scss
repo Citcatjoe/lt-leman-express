@@ -1,0 +1,108 @@
+.infographic .layout, .small-infographic .layout{
+  background: $odd-color;
+  text-align: center;
+  padding: .6em 0;
+}
+
+/* d3js */
+.container-wide{
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.departements {
+  stroke: #eee;
+}
+#mapLegend {
+  margin-top: 1em;
+}
+
+#rightPanel{
+  float: left;
+  margin-left: -30px;
+
+  @include breakpoint(md) {
+    margin-left: 0;
+  }
+  @include breakpoint(xs) {
+    width: 95%;
+    padding-left: 5px;
+    /*width: 95vw !important;*/
+    margin: auto;
+    margin-top: 0;
+  }
+
+  #dataSelector{
+    @include breakpoint(md) {
+      width: 48%;
+    }
+  }
+
+  #motherTip{
+    background-color: #fff;
+    margin: 30px 0 30px -20px;
+    padding: 10px 2px 0 10px;
+    border: 2px solid #444;
+    border-radius: 5px;
+    min-height: 140px;
+    width: 260px;
+
+    @include breakpoint(md) {
+      width: 49%;
+      margin-left: 0;
+      margin-top: 0;
+      float: right;
+    }
+    ol{
+      font-size: .9em;
+      padding-left: 10px;
+      margin: .4em;
+    }
+    h3.statename{
+      margin: .2em 0;
+      font-size: 1.2em;
+      line-height: 1.1;
+      color: #333;
+    }
+    span.value{
+      font-weight: 600;
+      color: #333;
+    }
+    span.colorspan{
+      width: 11px;
+      height: 11px;
+      margin-right: 2px;
+      display: inline-block;
+      background-color: #bbb;
+    }
+  }
+
+
+}
+
+#credits{
+  font-size: .9em;
+  margin-top: 100px;
+  margin-left: 40px;
+  text-align: right;
+  clear: both;
+}
+
+svg{
+  float: left;
+}
+
+@media screen and (max-width: 768px) {
+
+  // #rightPanel div{
+  //   margin: 5px auto;
+  //   width: 96%;
+  // }
+
+  #credits{
+    clear: left;
+  }
+}

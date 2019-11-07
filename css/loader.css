@@ -4,16 +4,16 @@
 
   position: absolute;
   left: 50%;
-  top: 50%; 
-  /*top: 54%; */
-  transform: translateX(-50%);
+  /*top: 47%; with sponsor*/
+  top: 54%; 
+  transform: translateX(-48%);
 }
 
 .double-bounce1, .double-bounce2 {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #e3002c;
+  background-color: #eee;
   opacity: 0.6;
   position: absolute;
   top: 0;
