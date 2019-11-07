@@ -16,7 +16,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<link href="https://labs.letemps.ch/interactive/d3js/c3.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="distances/css/distances.css">
 	<script src="https://www.youtube.com/iframe_api"></script>
 	<script>var players = [];</script>
 
@@ -25,43 +24,43 @@
 	{{ block('bar_brand') }}
 
 	<!--<div class="overlay">
-		<img class="logo-lt-blanc" src="img/logo-lt-blanc.svg" alt="">
-		<div class="spinner">
-			<div class="double-bounce1"></div>
-			<div class="double-bounce2"></div>
-		</div>
-	</div>-->
+	<img class="logo-lt-blanc" src="img/logo-lt-blanc.svg" alt="">
+	<div class="spinner">
+	<div class="double-bounce1"></div>
+	<div class="double-bounce2"></div>
+</div>
+</div>-->
 
-	<header>
-		<div class="header__bg"></div>
-		<div class="header__bg fab"></div>
-		<div class="header__gradient"></div>
+<header>
+	<div class="header__bg"></div>
+	<div class="header__bg fab"></div>
+	<div class="header__gradient"></div>
 
-		<div class="header__content">
-			<div class="header__content__container">
-				<div class="header__content__container__box">
-					<h1>Léman Express, le train qui peut en cacher beaucoup d’autres</h1>
-					<!-- <img class="separateur" src="img/separateur.svg" alt=""> -->
-					<h2 class="author">Un reportage de <span> Christian Lecomte</span></h2>
-					<h2 class="social">
-						<a target="blank" href="https://www.facebook.com/sharer.php?u={{ app.url }}&display=popup&ref=plugin&src=share_button"><i class="fa fa-facebook"></i></a>
-						<a target="blank" href="https://twitter.com/intent/tweet?text={{ description ~ ' ' ~ app.url ~ ' '|url_encode }}&via=letemps"><i class="fa fa-twitter fa-middle"></i></a>
-						<a target="blank" href="https://www.linkedin.com/shareArticle?url={{ app.url }}&mini=true&title={{ title|url_encode }}&summary={{ description|url_encode }}&source={{ 'Le Temps'|url_encode }}"><i class="fa fa-linkedin"></i></a>
-					</h2>
-				</div>
+	<div class="header__content">
+		<div class="header__content__container">
+			<div class="header__content__container__box">
+				<h1>Léman Express, le train qui peut en cacher beaucoup d’autres</h1>
+				<!-- <img class="separateur" src="img/separateur.svg" alt=""> -->
+				<h2 class="author">Un reportage de <span> Christian Lecomte</span></h2>
+				<h2 class="social">
+					<a target="blank" href="https://www.facebook.com/sharer.php?u={{ app.url }}&display=popup&ref=plugin&src=share_button"><i class="fa fa-facebook"></i></a>
+					<a target="blank" href="https://twitter.com/intent/tweet?text={{ description ~ ' ' ~ app.url ~ ' '|url_encode }}&via=letemps"><i class="fa fa-twitter fa-middle"></i></a>
+					<a target="blank" href="https://www.linkedin.com/shareArticle?url={{ app.url }}&mini=true&title={{ title|url_encode }}&summary={{ description|url_encode }}&source={{ 'Le Temps'|url_encode }}"><i class="fa fa-linkedin"></i></a>
+				</h2>
 			</div>
 		</div>
+	</div>
 
-		<div class="scroll-indicator">
-			<div class="scroll-indicator-inner"></div>
-		</div>
+	<div class="scroll-indicator">
+		<div class="scroll-indicator-inner"></div>
+	</div>
 
-		<!-- <div class="header-sponsor">
-		<a href="https://www.letemps.ch/partenariats" target="_blank"><span class="charte">[?]</span></a>
-		<a href="https://www.mirabaud.com/fr/" target="_blank"><img src="img/logo-sponsor-only.svg" alt=""></a>
-		<span>Avec le soutien de </span>
+	<!-- <div class="header-sponsor">
+	<a href="https://www.letemps.ch/partenariats" target="_blank"><span class="charte">[?]</span></a>
+	<a href="https://www.mirabaud.com/fr/" target="_blank"><img src="img/logo-sponsor-only.svg" alt=""></a>
+	<span>Avec le soutien de </span>
 
-	</div> -->
+</div> -->
 </header>
 
 
@@ -94,88 +93,135 @@
 		<p>Le professeur Laurent Matthey, de l’Université de Genève, spécialiste des politiques urbaines et de développement territorial, juge, plus globalement, que Genève pourrait ainsi passer de son statut actuel d’agglomération à celui de métropole: «Une identité régionale va s’affirmer. Les gares vont favoriser l’émergence de nouvelles centralités en lien avec l’économie certes, mais aussi potentiellement la culture.»</p>
 
 		<div class="interactive-container">
-		  <form>
-		    <input class="chosen-value from" type="text" value="" placeholder="De…" data-placeholder="De…" data-values="from" />
-		    <ul class="value-list unique-list from">
-		      <li>Annecy</li>
-		      <li>Annemasse</li>
-		      <li>Bellegarde</li>
-		      <li>Bons-en-Chablais</li>
-		      <li>Chêne-Bourg</li>
-		      <li>Cluses</li>
-		      <li>Coppet</li>
-		      <li>Evian-les-Bains</li>
-		      <li>Genève</li>
-		      <li>Genève-Champel</li>
-		      <li>Genève–Eaux-Vives</li>
-		      <li>La Plaine</li>
-		      <li>La Roche-sur-Foron</li>
-		      <li>Lancy-Bachet</li>
-		      <li>Lancy-Pont-Rouge</li>
-		      <li>St-Gervais-Les-Bains-Le Fayet</li>
-		      <li>Thonon-les-Bains</li>
-		      <li>Versoix</li>
-		    </ul>
+			<h3>Calculez votre temps de trajet</h3>
 
-		    <input class="chosen-value to" type="text" value="" placeholder="À…" data-placeholder="À" data-values="to" />
-		    <ul class="value-list to">
-		      <li>Annecy</li>
-		      <li>Annemasse</li>
-		      <li>Bellegarde</li>
-		      <li>Bons-en-Chablais</li>
-		      <li>Chêne-Bourg</li>
-		      <li>Cluses</li>
-		      <li>Coppet</li>
-		      <li>Evian-les-Bains</li>
-		      <li>Genève</li>
-		      <li>Genève-Champel</li>
-		      <li>Genève–Eaux-Vives</li>
-		      <li>La Plaine</li>
-		      <li>La Roche-sur-Foron</li>
-		      <li>Lancy-Bachet</li>
-		      <li>Lancy-Pont-Rouge</li>
-		      <li>St-Gervais-Les-Bains-Le Fayet</li>
-		      <li>Thonon-les-Bains</li>
-		      <li>Versoix</li>
-		    </ul>
-		  </form>
+			<form>
+				<div class="selection">
+					<label>Point de départ</label>
+					<input class="chosen-value from" type="text" value="" placeholder="De…" data-placeholder="De…" data-values="from" />
+					<ul class="value-list unique-list from">
+						<li>Annecy</li>
+						<li>Annemasse</li>
+						<li>Bellegarde</li>
+						<li>Bons-en-Chablais</li>
+						<li>Chêne-Bourg</li>
+						<li>Cluses</li>
+						<li>Coppet</li>
+						<li>Evian-les-Bains</li>
+						<li>Genève</li>
+						<li>Genève-Champel</li>
+						<li>Genève–Eaux-Vives</li>
+						<li>La Plaine</li>
+						<li>La Roche-sur-Foron</li>
+						<li>Lancy-Bachet</li>
+						<li>Lancy-Pont-Rouge</li>
+						<li>St-Gervais-Les-Bains-Le Fayet</li>
+						<li>Thonon-les-Bains</li>
+						<li>Versoix</li>
+					</ul>
+				</div>
+
+				<div class="selection">
+					<label>Point d’arrivée</label>
+					<input class="chosen-value to" type="text" value="" placeholder="À…" data-placeholder="À" data-values="to" />
+					<ul class="value-list to">
+						<li>Annecy</li>
+						<li>Annemasse</li>
+						<li>Bellegarde</li>
+						<li>Bons-en-Chablais</li>
+						<li>Chêne-Bourg</li>
+						<li>Cluses</li>
+						<li>Coppet</li>
+						<li>Evian-les-Bains</li>
+						<li>Genève</li>
+						<li>Genève-Champel</li>
+						<li>Genève–Eaux-Vives</li>
+						<li>La Plaine</li>
+						<li>La Roche-sur-Foron</li>
+						<li>Lancy-Bachet</li>
+						<li>Lancy-Pont-Rouge</li>
+						<li>St-Gervais-Les-Bains-Le Fayet</li>
+						<li>Thonon-les-Bains</li>
+						<li>Versoix</li>
+					</ul>
+				</div>
+
+				<!-- <button id="reverse">⇄</button> -->
+			</form>
+
+			<div id="schedule-result">
+				<!-- <h3></h3> -->
+				<div class="error"></div>
+				<div class="time">
+					<span class="prepend"></span>
+					<span class="bigfat"></span>
+					<span class="append"></span>
+					<span class="reverse"></span>
+				</div>
+				<div class="price"></div>
+			</div>
 		</div>
 
 	</div>
-	</section>
-	<section class="inter-titre" style="background: url('img/fullwidth/Voie_Verte-6.jpg'); background-position: center bottom;">
-	</section>
+</section>
+<section class="inter-titre" style="background: url('img/fullwidth/Voie_Verte-6.jpg'); background-position: center bottom;">
+</section>
 
-	<!-- NOUVEAU CHAPITRE -->
-	<section class="text-container padding-bottom">
+<!-- NOUVEAU CHAPITRE -->
+<section class="text-container padding-bottom">
 	<div class="caption scroll">
 		Légende.
 	</div>
 
 	<div class="container">
-		<h3 class="inter-titre title">1. Neuf frontaliers sur dix se déplacent en voiture</h3>
+		<h3 class="inter-titre title">1. Neuf frontaliers haut-savoyards sur dix se déplacent en voiture</h3>
 
 		<p>En attendant le 15 décembre, le spectacle qui chaque jour se joue dès l’aube dans le bassin genevois demeure saisissant. Files ininterrompues d’automobiles, autant sur les grands axes qu’en campagne, sur ces chemins de traverse voués jadis aux tracteurs et aux écoliers à vélo. Ceux-ci ne s’y risquent plus guère. Le maraîcher se fait furieusement klaxonner et le scolaire a remisé, sur ordre parental, sa monture au garage. Les spécialistes nomment cela congestion: un afflux tel que le cœur de la cité peine à l’absorber. Sans compter la charge en toxines type CO2 qui s’abat. Une voiture, ça pollue. Alors 446 700! C’est le nombre de véhicules qui ont traversé quotidiennement les frontières cantonales en 2018, selon les chiffres de l’Etat de Genève.</p>
+
+		<iframe title="Un demi-million de v&eacute;hicules entre ou sort chaque jour de Gen&egrave;ve" aria-label="Bar Chart" id="datawrapper-chart-Qv9Dm" src="//datawrapper.dwcdn.net/Qv9Dm/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="206"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+
+		<div class="spacer-small"></div>
+		<div class="spacer-small"></div>
+
 		<p>Le trajet jusqu’à Annemasse se fait à contre-courant du flux, ce qui n’est pas déplaisant. Vu d’avion, quand il fait encore nuit, c’est beau comme des guirlandes sur un sapin. Depuis la terre ferme, ce serait plutôt un chapelet besogneux. Les abords de la gare de La Roche-sur-Foron, nœud ferroviaire qui envoie les trains vers Saint-Gervais-Le Fayet ou Annemasse, sont plutôt tristes sous le crachin. Les cafés alentour sont clos. Dans le hall, nulle trace d’employés de la SNCF. Le rideau de la billetterie est baissé. Les usagers font la queue devant un distributeur automatique. Pas de cheminot non plus sur les quais.</p>
 		<p>Il faut toquer à une porte réservée au personnel pour entrapercevoir l’uniforme et la casquette du chef d’escale, à peine trentenaire et fort aimable. Ce qu’il sait pour l’heure du Léman Express se résume à «ces trains test un peu fantômes qui passent de jour comme de nuit». Il sait aussi que les cadences seront augmentées, «un train environ toutes les 30 minutes aux heures de pointe, et il faudra 50 minutes pour rallier la gare Cornavin».</p>
 		<h3>Le train est un bus</h3>
 		<p>On retrouve des usagers non pas sur les quais mais sur la place de la gare. Le prochain train, celui de 8h12, est en fait… un bus. Le réseau ferroviaire haut-savoyard est vétuste et souvent doté d’une seule voie, ce qui limite l’envoi de trains. Ce département a toujours privilégié le routier. Conséquence: 92% des 86 000 frontaliers se rendent au travail en voiture.</p>
 		<p>Ce n’est pas le cas de cette passagère, réceptionniste dans un hôtel des Rues-Basses, qui chaque matin monte dans le car et arrive 30 minutes plus tard aux Eaux-Vives, à Genève, grâce à la voie rapide réservée aux autobus. L’arrivée du Léman Express modifiera-t-elle ses habitudes? «Je ne crois pas, répond-elle, parce que j’aime bien ce bus direct. Et puis je paie 60 euros par mois et j’ai vu sur internet que l’abonnement mensuel avec le Léman Pass sera de 121 euros.»</p>
-		<p>Le chauffeur qui depuis trois ans est au volant du 8h12 précise: «Tous les matins, 25 personnes environ montent, toujours plus ou moins les mêmes têtes. Il y en a qui viennent d’Annecy, si le train est en retard, je les attends. Pas sûr que le Léman Express offre le même service.» Alain Emon ouvre la soute de son autobus: «Regardez, il y a cinq ou six bicyclettes, je les accepte si elles sont pliables, les gens prennent le bus aussi pour ça.»</p>
-		<p>Peu après le départ, un jeune homme est arrivé, tout aussi essoufflé que dépité. Sale matinée pour lui: «Mon covoitureur m’a planté à cause d’une grosse fièvre et je viens de rater le 8h12.» Lui proposer donc un <em>shuttle</em> jusqu’à Genève et la station du Bachet-de-Pesay. Le tram 18 le déposera à la gare Cornavin. Ensuite il prendra un train pour Coppet. Il travaille dans le conseil aux entreprises, est par avance conquis par le Léman Express. Il explique: «Je vais gagner un temps fou, j’aurai un train direct toutes les 30 minutes pour Coppet et environ 50 minutes de voyage. Actuellement, je descends à Annemasse, je prends un bus jusqu’à la douane de Moillesulaz, puis le tram 12, puis le 14 ou le 18, ensuite je monte dans un train à Cornavin.»</p>
+		<p>Le chauffeur qui depuis trois ans est au volant du 8h12 précise: «Tous les matins, 25 personnes environ montent, toujours plus ou moins les mêmes têtes. Il y en a qui viennent d’Annecy, si le train est en retard, je les attends. Pas sûr que le Léman Express offre le même service.» Alain Emon ouvre la soute de son autobus: «Regardez, il y a cinq ou six bicyclettes, je les accepte si elles sont pliables, les gens prennent le bus aussi pour ça.»  Dès le 15 décembre cependant, le 8h12 sera supprimé afin que les usagers prennent le train. Pour Alain Emon, la plupart reprendront plutôt la voiture : le Léman Express est trop cher et n’est pas direct.</p>
+		<p>Peu après le départ, un jeune homme arrive, tout aussi essoufflé que dépité. Sale matinée pour lui: «Mon covoitureur m’a planté à cause d’une grosse fièvre et je viens de rater le 8h12.» Lui proposer donc un <em>shuttle</em> jusqu’à Genève et la station du Bachet-de-Pesay. Le tram 18 le déposera à la gare Cornavin. Ensuite il prendra un train pour Coppet. Il travaille dans le conseil aux entreprises, est par avance conquis par le Léman Express. Il explique: «Je vais gagner un temps fou, j’aurai un train direct toutes les 30 minutes pour Coppet et environ 50 minutes de voyage. Actuellement, je descends à Annemasse, je prends un bus jusqu’à la douane de Moillesulaz, puis le tram 12, puis le 14 ou le 18, ensuite je monte dans un train à Cornavin.»</p>
 		<h3>«Lire, travailler, dormir dans le train»</h3>
 		<p>Direction les Hôpitaux universitaires de Genève (HUG) accessibles depuis Bachet-de-Pesay par le tram. Il faut compter une vingtaine de minutes, en incluant un peu de marche. Le 15 décembre, le trajet se fera en six minutes en montant dans un train depuis la nouvelle gare enterrée. Le nouveau réseau «changera la vie» d’Agnès Reffet, chargée de communication à l’hôpital. Au début de sa carrière, elle prenait l’autorail depuis Annemasse. Désormais, le Léman Express lui fera gagner une heure par jour.</p>
-		<p><strong>En vidéo: «Le Léman Express, ça me rajeunit et ça va changer ma vie»</strong></p>
+	</div>
+	</section>
+
+	<!-- SECTION VIDEO -->
+	<section class="video padding-bottom">
+		<div class="video-wrapper">
+			<div class="trigger"></div>
+			<div class="caption caption-title">
+				<b>EN VIDEO:</b> «Le Léman Express, ça me rajeunit et ça va changer ma vie»
+			</div>
+			<video controls poster="img/content/190621_DIAGONALE_1.jpg">
+				<source src="https://player.vimeo.com/external/368501458.hd.mp4?s=97ef6e56596f4218e653a372a9dd0e0b2c02c16e&profile_id=175"
+				type="video/mp4"> Votre navigateur ne supporte pas les vidéos HTML5.
+			</video>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+
 		<p>Bernard Mugnier, 53 ans, infirmier et responsable adjoint des soins aux urgences des HUG, a aussi accepté de parler de sa mobilité. Ce Français qui réside à Bonneville, en Haute-Savoie, se rend depuis trente ans au travail en voiture. La durée est variable selon le trafic: de 30 à 90 minutes. «Il y a du stress, de la fatigue, un coût élevé en comptant l’essence, le péage autoroutier et le parking des HUG à 250 francs le mois», résume-t-il.</p>
 		<p>Le 15 décembre, Bernard pédalera jusqu’à la gare de Bonneville, montera dans le Léman Express qui le déposera quarante-cinq minutes plus tard à la gare de Champel. Là, un nouvel accès piéton souterrain pourvu d’un tapis roulant le poussera jusqu’à son lieu de travail. Prix de son abonnement mensuel: 160 euros. «Je vais lire, travailler, dormir dans le train et faire des économies. Je ne pensais pas vivre cela avant ma retraite», lance-t-il. Selon des chiffres fournis par les HUG, 39% des 11 730 collaborateurs de l’établissement, toutes nationalités confondues, sont domiciliés en France.</p>
 		<p>«S’ils font comme moi, cela fera déjà moins de voitures sur les routes et donc moins de pollution», juge Bernard Mugnier. Par ailleurs, les HUG contribuent actuellement à hauteur de 250 francs par an pour l’achat d’un abonnement Unireso et de 350 francs par an pour celui d’un abonnement CFF. Cet effort devrait être poursuivi avec le Léman Pass, nouveau système tarifaire transfrontalier harmonisé entre la Suisse et la France (lemanpass.com) qui réunit dix opérateurs, dont les CFF, la SNCF, les TPG et les réseaux des villes suisses et françaises situées sur le périmètre du RER.</p>
 	</div>
-	</section>
-	<section class="inter-titre" style="background: url('img/fullwidth/Voie_Verte-6.jpg'); background-position: center bottom;">
-	</section>
+</section>
+<section class="inter-titre" style="background: url('img/fullwidth/Voie_Verte-6.jpg'); background-position: center bottom;">
+</section>
 
-	<!-- NOUVEAU CHAPITRE -->
-	<section class="text-container padding-bottom">
+<!-- NOUVEAU CHAPITRE -->
+<section class="text-container padding-bottom">
 	<div class="caption scroll">
 		Une superlégende
 	</div>
@@ -191,7 +237,28 @@
 		<p>De part et d’autre de la frontière, le Léman Express est vécu comme un challenge. «Tout est différent entre Suisse et France, sauf l’écartement des voies», ironise Mario Werren. Chaque pays a ses propres lois qui régissent le travail et celles-ci seront respectées. Si les personnels roulants français se mettent en grève, leurs homologues helvètes ne pallieront pas. «On s’adaptera», commente laconiquement Mario Werren.</p>
 		<p>Les jours fériés différents d’un pays à l’autre augurent quelques maux de tête. Un service réduit d’un côté, pas de l’autre? «Les gens voyageront avec leur portable, tout sera communiqué sur l’état du réseau», répond le directeur de Lémanis. Qui ajoute, réclamant par avance un peu d’indulgence: «Le réseau zurichois a mis vingt ans pour se développer.»</p>
 		<p>Il a rappelé que le Léman Express ne serait pas seulement le train des frontaliers mais celui de tous les habitants. «Un Lausannois, le samedi soir, pourra aller assister à un concert au théâtre de Château Rouge à Annemasse et rentrer chez lui en train, idem pour un Thononais qui veut se rendre à l’Arena de Genève.»</p>
-		<p><strong>En vidéo: «Je pourrai facilement sortir à Annecy et à Lausanne»</strong></p>
+
+		</div>
+		</section>
+
+		<!-- SECTION VIDEO -->
+		<section class="video">
+			<div class="video-wrapper">
+				<div class="trigger"></div>
+				<div class="caption caption-title">
+					<b>EN VIDEO:</b> «Je pourrai facilement sortir à Annecy et à Lausanne»
+				</div>
+				<video controls poster="img/content/190621_DIAGONALE_1.jpg">
+					<source src="https://player.vimeo.com/external/368505294.hd.mp4?s=469287114978b1b9b84414d780315399867c43d4&profile_id=175"
+					type="video/mp4"> Votre navigateur ne supporte pas les vidéos HTML5.
+				</video>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+
+
 		<p>Projection semblable de l’universitaire, Laurent Matthey: «Il y avait un réel effet frontière. On peut faire l’hypothèse d’un accroissement de la pendularité du vendredi ou samedi soir avec une culture du clubisme qui va s’étendre.»</p>
 		<h3>Peu de places pour vélos</h3>
 		<p>Jean-Marie Humbert, 47 ans, Suisse de nationalité, travaille dans une institution culturelle en Vieille-Ville de Genève. Il réside en Haute-Savoie, près de Bons-en-Chablais (25 km de Genève), où il a trouvé à se loger confortablement et à un coût supportable. Pas de voiture mais un vélo qu’il pose dans le train de 6h50 ou de 7h20. A Annemasse, il l’enfourche et attaque avec entrain la voie verte ouverte aux piétons et cyclistes depuis avril 2018 entre la France voisine et les Eaux-Vives.</p>
@@ -215,31 +282,31 @@
 	<div class="container">
 		<h3 class="inter-titre title">3. Des quartiers transformés</h3>
 
-			<p>Une rencontre avec Guillaume Mathelier, le maire d’Ambilly, tout près d’Annemasse, est le prétexte à emprunter la fameuse voie verte. Piste cyclable et cheminement piétonnier de 5 kilomètres calqués sur l’ancien tracé de la micheline Annemasse-Eaux-Vives. Le Léman Express, lui, file en sous-sol. Si matin et soir, aux heures de pointe, on s’y bouscule et y rivalisent vélos classiques et électriques, à 14h tout est paisible. Défilent des arrière-quartiers: terrasses d’immeubles, écoles, pavillons, jardinets, terrains de jeu. On y voit des mamans de jour penchées sur des landaus, des aînés pousser des déambulateurs et des joggeurs dilettantes.</p>
-			<p>Un homme élégamment vêtu, arc-bouté sur une trottinette, qu’on a envie de questionner, s’excuse: «Je plaide dans une demi-heure!» En bout de voie, près du pont sous lequel coule le Foron, il y a la frontière, quasi invisible si ce n’est cette sculpture d’Ute Bauer représentant deux rails et sur laquelle on peut lire en souvenir du 21 septembre 2018, jour de la jonction ferroviaire Suisse-France: «Les rails soudés ci-dessous aujourd’hui feront progresser rencontre et échange entre les deux peuples mobiles.»</p>
-			<p>Marathonien émérite, Guillaume Mathelier aime à fouler la voie verte. Il aime davantage la question posée par sa fille de 8 ans quand elle court à ses côtés: «La frontière, elle est où?» Il confie: «La voie verte a déjà changé des mentalités, on s’y promène, on y lit, on bavarde de part et d’autre. Elle fait comprendre que Genève n’est pas qu’un tiroir-caisse pour frontaliers mais aussi un espace de vie. A plus grande échelle, ce sera aussi la mission du Léman Express.»</p>
-			<h3>«Une caissière gagne 10 fois le RSA»</h3>
-			<p>Optimiste, l’élu local? «Oui, même si je mesure les bouleversements et les tracas à venir.» Ambilly, 6500 habitants dont 2000 sont des frontaliers français ou suisses. Les revenus des habitants oscillent entre 400 et 8000 euros, voire beaucoup plus. «Une caissière de la Migros gagne 10 fois plus que quelqu’un au RSA (revenu de solidarité active), le différentiel entre pauvres et riches est énorme», constate Guillaume Mathelier.</p>
-			<p>Tant de disparité n’est pas jamais bon pour une commune. Le maire veille à ce que les tarifs sociaux offrant par exemple un accès pour tous aux cantines scolaires demeurent élevés. La ville devrait parvenir à aider les plus nécessiteux. La vente de ses Communaux d’Ambilly (20 hectares de terrain) à Genève afin d’y construire 2500 logements d’ici à 2030 va lui rapporter 105 millions d’euros, répartis sur 99 ans. De plus, la commune voit en ce moment sortir de terre l’écoquartier de la Zac Etoile. Sur 20 hectares, des bureaux, des hôtels, des commerces et surtout 1200 logements; 30% de logements sociaux, 30% de logements libres et le reste en accès à la propriété.</p>
-			<p>«Genève a le don d’exporter ses problèmes de logement, beaucoup de Suisses vont donc venir s’installer», prédit le maire. D’autant qu’il sera facile de monter dans un train du Léman Express à la gare d’Annemasse flambant neuve ou de prendre le tout nouveau tram 17 Lancy-Pont-Rouge-Annemasse. «Le seul tram de Haute-Savoie, la première ligne transfrontalière depuis soixante ans», ne manque pas de souligner Guillaume Mathelier.</p>
-			<h3>La peur de la «racaille d’Annemasse»</h3>
-			<p>En 2009, une affiche de l’UDC très stigmatisante laissait entendre que le CEVA (ancien nom du Léman Express) allait être le nouveau moyen de transport de la «racaille» d’Annemasse, en l’occurrence des jeunes du Perrier. Que pensent les jeunes de ce quartier populaire d’Annemasse (8000 habitants, 50 nationalités) de l’arrivée du Léman Express?</p>
-			<p>En ce mercredi jour de marché, on en retrouve quelques-uns attablés devant le centre commercial. L’un dit: «Le métro et le nouveau tram, ça ne nous intéresse pas. C’est seulement fait pour les frontaliers. Nous, on travaille dans la vallée de l’Arve, on préfère nos 35h aux 50 de la Suisse. On a une meilleure qualité de vie et plus de vacances.» Un autre, ironique: «Ça va dealer plus vite et les Suisses devront coudre leurs poches.»</p>
-			<h3>Colosses de béton</h3>
-			<p>Une mutation urbaine est en cours autour des nouvelles gares du Léman Express. A Chêne-Bourg, la Tour Opale (19 étages) pousse dans ce qui fut une friche industrielle et 400 logements sont annoncés. Aux Eaux-Vives, une ville dans la ville naît: la Comédie, des commerces, une crèche, une piscine, des terrains de sport et, là aussi, 400 logements.</p>
-			<p>Au Bachet de Pesay, 650 nouveaux logements sont prévus. Autant à Lancy-Pont-Rouge, caractérisés par un aspect minéral et rude qui ne plaît pas à tout le monde. Dont Maya Stalder, directrice de crèche à la retraite, qui a décidé de plier bagage, effrayée par l’acronyme PAV (Praille-Acacias-Vernets) et les colosses de béton qui déjà pointent leur bout de gratte-ciel.</p>
-			<h3>«Moche comme la mort»</h3>
-			<p>«Le quartier est en train de devenir moche comme la mort, rien à voir avec mon enfance ici», regrette-t-elle. Route des Acacias, sa maison achetée 18 000 francs par son père en 1938 (superficie de 708 m2, jardin compris) a toujours fait des envieux. Depuis 1957, la famille a reçu des menaces d’expropriation mais a tenu bon. De mirifiques offres d’achat aussi, toutes rejetées.</p>
-			<p>Maya a cultivé son jardin, y a façonné puis posé sur la terrasse quatre personnages baptisés le Jardinier, Mme Jacquacacias, M. le Comte de Ternier et la Gamine. Quatre turlupins inspirés d’une coutume villageoise pyrénéenne «pour interpeller le passant et amorcer le bavardage». Aux Acacias, le quatuor en carton-pâte était chaque jour photographié par les cadres de Rolex et des touristes japonais.</p>
-			<p>Maya a vendu son chalet de ville «à une grosse société bancaire et à un très, très bon prix». Avec la certitude qu’il ne sera pas rasé, «car on a réussi à la classer avec les ruelles et les pavillons autour». Désormais, elle habite dans un immeuble résidentiel du côté de Saint-Georges, au Petit-Lancy. «Je devais m’éloigner. Les trains, c’est bien, mais ça détruit le paysage autour», dit-elle. Le quatuor, quant à lui, a trouvé abri sous le tunnel à cultures d’une maraîchère genevoise.</p>
+		<p>Une rencontre avec Guillaume Mathelier, le maire d’Ambilly, tout près d’Annemasse, est le prétexte à emprunter la fameuse voie verte. Piste cyclable et cheminement piétonnier de 5 kilomètres calqués sur l’ancien tracé de la micheline Annemasse-Eaux-Vives. Le Léman Express, lui, file en sous-sol. Si matin et soir, aux heures de pointe, on s’y bouscule et y rivalisent vélos classiques et électriques, à 14h tout est paisible. Défilent des arrière-quartiers: terrasses d’immeubles, écoles, pavillons, jardinets, terrains de jeu. On y voit des mamans de jour penchées sur des landaus, des aînés pousser des déambulateurs et des joggeurs dilettantes.</p>
+		<p>Un homme élégamment vêtu, arc-bouté sur une trottinette, qu’on a envie de questionner, s’excuse: «Je plaide dans une demi-heure!» En bout de voie, près du pont sous lequel coule le Foron, il y a la frontière, quasi invisible si ce n’est cette sculpture d’Ute Bauer représentant deux rails et sur laquelle on peut lire en souvenir du 21 septembre 2018, jour de la jonction ferroviaire Suisse-France: «Les rails soudés ci-dessous aujourd’hui feront progresser rencontre et échange entre les deux peuples mobiles.»</p>
+		<p>Marathonien émérite, Guillaume Mathelier aime à fouler la voie verte. Il aime davantage la question posée par sa fille de 8 ans quand elle court à ses côtés: «La frontière, elle est où?» Il confie: «La voie verte a déjà changé des mentalités, on s’y promène, on y lit, on bavarde de part et d’autre. Elle fait comprendre que Genève n’est pas qu’un tiroir-caisse pour frontaliers mais aussi un espace de vie. A plus grande échelle, ce sera aussi la mission du Léman Express.»</p>
+		<h3>«Une caissière gagne 10 fois le RSA»</h3>
+		<p>Optimiste, l’élu local? «Oui, même si je mesure les bouleversements et les tracas à venir.» Ambilly, 6500 habitants dont 2000 sont des frontaliers français ou suisses. Les revenus des habitants oscillent entre 400 et 8000 euros, voire beaucoup plus. «Une caissière de la Migros gagne 10 fois plus que quelqu’un au RSA (revenu de solidarité active), le différentiel entre pauvres et riches est énorme», constate Guillaume Mathelier.</p>
+		<p>Tant de disparité n’est pas jamais bon pour une commune. Le maire veille à ce que les tarifs sociaux offrant par exemple un accès pour tous aux cantines scolaires demeurent élevés. La ville devrait parvenir à aider les plus nécessiteux. La vente de ses Communaux d’Ambilly (20 hectares de terrain) à Genève afin d’y construire 2500 logements d’ici à 2030 va lui rapporter 105 millions d’euros, répartis sur 99 ans. De plus, la commune voit en ce moment sortir de terre l’écoquartier de la Zac Etoile. Sur 20 hectares, des bureaux, des hôtels, des commerces et surtout 1200 logements; 30% de logements sociaux, 30% de logements libres et le reste en accès à la propriété.</p>
+		<p>«Genève a le don d’exporter ses problèmes de logement, beaucoup de Suisses vont donc venir s’installer», prédit le maire. D’autant qu’il sera facile de monter dans un train du Léman Express à la gare d’Annemasse flambant neuve ou de prendre le tout nouveau tram 17 Lancy-Pont-Rouge-Annemasse. «Le seul tram de Haute-Savoie, la première ligne transfrontalière depuis soixante ans», ne manque pas de souligner Guillaume Mathelier.</p>
+		<h3>La peur de la «racaille d’Annemasse»</h3>
+		<p>En 2009, une affiche de l’UDC très stigmatisante laissait entendre que le CEVA (ancien nom du Léman Express) allait être le nouveau moyen de transport de la «racaille» d’Annemasse, en l’occurrence des jeunes du Perrier. Que pensent les jeunes de ce quartier populaire d’Annemasse (8000 habitants, 50 nationalités) de l’arrivée du Léman Express?</p>
+		<p>En ce mercredi jour de marché, on en retrouve quelques-uns attablés devant le centre commercial. L’un dit: «Le métro et le nouveau tram, ça ne nous intéresse pas. C’est seulement fait pour les frontaliers. Nous, on travaille dans la vallée de l’Arve, on préfère nos 35h aux 50 de la Suisse. On a une meilleure qualité de vie et plus de vacances.» Un autre, ironique: «Ça va dealer plus vite et les Suisses devront coudre leurs poches.»</p>
+		<h3>Colosses de béton</h3>
+		<p>Une mutation urbaine est en cours autour des nouvelles gares du Léman Express. A Chêne-Bourg, la Tour Opale (19 étages) pousse dans ce qui fut une friche industrielle et 400 logements sont annoncés. Aux Eaux-Vives, une ville dans la ville naît: la Comédie, des commerces, une crèche, une piscine, des terrains de sport et, là aussi, 400 logements.</p>
+		<p>Au Bachet de Pesay, 650 nouveaux logements sont prévus. Autant à Lancy-Pont-Rouge, caractérisés par un aspect minéral et rude qui ne plaît pas à tout le monde. Dont Maya Stalder, directrice de crèche à la retraite, qui a décidé de plier bagage, effrayée par l’acronyme PAV (Praille-Acacias-Vernets) et les colosses de béton qui déjà pointent leur bout de gratte-ciel.</p>
+		<h3>«Moche comme la mort»</h3>
+		<p>«Le quartier est en train de devenir moche comme la mort, rien à voir avec mon enfance ici», regrette-t-elle. Route des Acacias, sa maison achetée 18 000 francs par son père en 1938 (superficie de 708 m2, jardin compris) a toujours fait des envieux. Depuis 1957, la famille a reçu des menaces d’expropriation mais a tenu bon. De mirifiques offres d’achat aussi, toutes rejetées.</p>
+		<p>Maya a cultivé son jardin, y a façonné puis posé sur la terrasse quatre personnages baptisés le Jardinier, Mme Jacquacacias, M. le Comte de Ternier et la Gamine. Quatre turlupins inspirés d’une coutume villageoise pyrénéenne «pour interpeller le passant et amorcer le bavardage». Aux Acacias, le quatuor en carton-pâte était chaque jour photographié par les cadres de Rolex et des touristes japonais.</p>
+		<p>Maya a vendu son chalet de ville «à une grosse société bancaire et à un très, très bon prix». Avec la certitude qu’il ne sera pas rasé, «car on a réussi à la classer avec les ruelles et les pavillons autour». Désormais, elle habite dans un immeuble résidentiel du côté de Saint-Georges, au Petit-Lancy. «Je devais m’éloigner. Les trains, c’est bien, mais ça détruit le paysage autour», dit-elle. Le quatuor, quant à lui, a trouvé abri sous le tunnel à cultures d’une maraîchère genevoise.</p>
 
 	</div>
-	</section>
-	<section class="inter-titre" style="background: url('img/fullwidth/Voie_Verte-6.jpg'); background-position: center bottom;">
-	</section>
+</section>
+<section class="inter-titre" style="background: url('img/fullwidth/Voie_Verte-6.jpg'); background-position: center bottom;">
+</section>
 
-	<!-- NOUVEAU CHAPITRE -->
-	<section class="text-container padding-bottom">
+<!-- NOUVEAU CHAPITRE -->
+<section class="text-container padding-bottom">
 	<div class="caption scroll">
 		Une superlégende
 	</div>
@@ -264,123 +331,123 @@
 		<p>Selon les défenseurs de l’environnement, c’est là un très mauvais signal au moment où le Léman Express va arriver en gare d’Evian et de Thonon. D’autant que l’on reparle de la réouverture de la légendaire ligne dite du Tonkin, entre Evian et Saint-Gingolph. Ses 17 km de rails sont désaffectés depuis vingt ans.</p>
 		<p>«Le Tonkin est le maillon manquant. Grâce au Léman Express, des trains pourraient circuler chaque heure et le temps de parcours entre Martigny et Genève serait plus court que le transit actuel par Lausanne», indique Benoît Grandcollot, le président de l’association RER Sud-Léman. La remise en état des rails ainsi que celle des tunnels et gares approchent les 230 millions de francs.</p>
 		<p>Pascal Bovey, le délégué valaisan à la mobilité, assure que la Confédération «est prête à assurer sa part de financement». La partie française ne s’est pas encore engagée clairement. Benoît Grandcollot insiste: «La réhabilitation de la ligne assurerait une continuité ferroviaire autour du lac Léman et limiterait le nombre de voitures entre Evian et le Valais, il y en a plus de 10 000 par jour.»</p>
-			</div>
-		</section>
+	</div>
+</section>
 
 
 
-				<section class="small-infographic explicatif">
-					<div class="container encart">
-						<h3>Pourquoi ce sujet?</h3>
-						<p>Nous ne pouvions passer à côté de cette révolution à l’échelle régionale. D’autant que <em>Le Temps</em> a suivi 10 années durant ce dossier, ses enjeux politiques et économiques, en insistant sur la question environnementale.</p>
-						<h3>Comment nous avons procédé?</h3>
-						<p>Objectif: présenter aux lecteurs la toile d’araignée que le Léman Express tisse depuis Genève jusqu’à Lausanne, Annecy, Thonon. Puis faire témoigner des habitants dont le quotidien va changer. Pointer aussi des insuffisances comme le manque de places de stationnement aux abords des gares.</p>
-						<h3>Que retenir à titre personnel?</h3>
-						<p>J’ai remarqué que de plus en plus de personnes n’acceptent de témoigner que de manière anonyme. Effet réseaux sociaux: vous donnez nom et prénom et la crainte est d’être pisté.</p>
-					</div>
-				</section>
+<section class="small-infographic explicatif">
+	<div class="container encart">
+		<h3>Pourquoi ce sujet?</h3>
+		<p>Nous ne pouvions passer à côté de cette révolution à l’échelle régionale. D’autant que <em>Le Temps</em> a suivi 10 années durant ce dossier, ses enjeux politiques et économiques, en insistant sur la question environnementale.</p>
+		<h3>Comment nous avons procédé?</h3>
+		<p>Pour présenter aux lecteurs la toile d’araignée que le Léman Express tisse depuis Genève jusqu’à Lausanne, Annecy, Thonon, nous avons voulu faire témoigner des habitants dont le quotidien va changer. Pointer aussi des insuffisances comme le manque de places de stationnement aux abords des gares.</p>
+		<h3>Que retenir à titre personnel?</h3>
+		<p>J’ai remarqué que de plus en plus de personnes n’acceptent de témoigner que de manière anonyme. Effet réseaux sociaux: vous donnez nom et prénom et la crainte est d’être pisté.</p>
+	</div>
+</section>
 
-				{{ block('contrib_bloc') }}
-				<style>
-				.contribution .container
-				{
-					padding-top: 30px;
-				}
-				</style>
+{{ block('contrib_bloc') }}
+<style>
+	.contribution .container
+	{
+		padding-top: 30px;
+	}
+</style>
 
 
-				<footer>
-					<!-- <hr class="end"> -->
-					<div class="container">
+<footer>
+	<!-- <hr class="end"> -->
+	<div class="container">
 
-						<h5>Nos grands formats</h5>
+		<h5>Nos grands formats</h5>
 
-						<div class="row">
-							<a href="https://labs.letemps.ch/interactive/2019/longread-secret-bancaire/" target="blank" class="footer__link">
-								<div class="teaser">
-									<div class="teaser-bg" style="background: url('img/thumb-secret-bancaire.jpg');"></div>
-									<div class="caption">Dix ans sans secret bancaire</div>
-								</div>
-							</a>
-							<a href="https://www.letemps.ch/grand-format/bienvenue-beattyville" target="blank" class="footer__link">
-								<div class="teaser">
-									<div class="teaser-bg" style="background: url('img/thumb-beattyville.jpg');"></div>
-									<div class="caption">Bienvenue à Beattyville</div>
-								</div>
-							</a>
-						</div>
+		<div class="row">
+			<a href="https://labs.letemps.ch/interactive/2019/longread-secret-bancaire/" target="blank" class="footer__link">
+				<div class="teaser">
+					<div class="teaser-bg" style="background: url('img/thumb-secret-bancaire.jpg');"></div>
+					<div class="caption">Dix ans sans secret bancaire</div>
+				</div>
+			</a>
+			<a href="https://www.letemps.ch/grand-format/bienvenue-beattyville" target="blank" class="footer__link">
+				<div class="teaser">
+					<div class="teaser-bg" style="background: url('img/thumb-beattyville.jpg');"></div>
+					<div class="caption">Bienvenue à Beattyville</div>
+				</div>
+			</a>
+		</div>
 
-						<div class="row">
-							<a href="https://labs.letemps.ch/interactive/2018/longread-homo-plasticus/" target="blank" class="footer__link">
-								<div class="teaser">
-									<div class="teaser-bg" style="background: url('img/thumb-plasticus.jpg');"></div>
-									<div class="caption">Homo plasticus</div>
-								</div>
-							</a>
+		<div class="row">
+			<a href="https://labs.letemps.ch/interactive/2018/longread-homo-plasticus/" target="blank" class="footer__link">
+				<div class="teaser">
+					<div class="teaser-bg" style="background: url('img/thumb-plasticus.jpg');"></div>
+					<div class="caption">Homo plasticus</div>
+				</div>
+			</a>
 
-							<a href="https://labs.letemps.ch/interactive/2018/longread-pesticides/" target="blank" class="footer__link">
-								<div class="teaser">
-									<div class="teaser-bg" style="background: url('img/thumb-pesticides.jpg');"></div>
-									<div class="caption">Dans les champs romands, la bataille des pesticides</div>
-								</div>
-							</a>
-						</div>
+			<a href="https://labs.letemps.ch/interactive/2018/longread-pesticides/" target="blank" class="footer__link">
+				<div class="teaser">
+					<div class="teaser-bg" style="background: url('img/thumb-pesticides.jpg');"></div>
+					<div class="caption">Dans les champs romands, la bataille des pesticides</div>
+				</div>
+			</a>
+		</div>
 
-						<div class="row">
-							<a href="https://labs.letemps.ch/interactive/2018/longread-pinchat/" target="blank" class="footer__link">
-								<div class="teaser">
-									<div class="teaser-bg" style="background: url('img/thumb-pinchat.jpg');"></div>
-									<div class="caption">Face aux classes infernales, les profs romands vivent un cauchemar</div>
-								</div>
-							</a>
+		<div class="row">
+			<a href="https://labs.letemps.ch/interactive/2018/longread-pinchat/" target="blank" class="footer__link">
+				<div class="teaser">
+					<div class="teaser-bg" style="background: url('img/thumb-pinchat.jpg');"></div>
+					<div class="caption">Face aux classes infernales, les profs romands vivent un cauchemar</div>
+				</div>
+			</a>
 
-							<a href="https://www.letemps.ch/grand-format/urgentistes-crime-geneve-justice-police" target="blank" class="footer__link">
-								<div class="teaser">
-									<div class="teaser-bg" style="background: url('img/thumb-urgentistes.jpg');"></div>
-									<div class="caption">Urgentistes du crime </div>
-								</div>
-							</a>
-						</div>
+			<a href="https://www.letemps.ch/grand-format/urgentistes-crime-geneve-justice-police" target="blank" class="footer__link">
+				<div class="teaser">
+					<div class="teaser-bg" style="background: url('img/thumb-urgentistes.jpg');"></div>
+					<div class="caption">Urgentistes du crime </div>
+				</div>
+			</a>
+		</div>
 
-						<div class="row">
-							<a href="https://labs.letemps.ch/interactive/2016/longread-gothard/" target="blank" class="footer__link">
-								<div class="teaser">
-									<div class="teaser-bg" style="background: url('img/thumb_gothard.jpg');"></div>
-									<div class="caption">Les oubliés du Gothard</div>
-								</div>
-							</a>
+		<div class="row">
+			<a href="https://labs.letemps.ch/interactive/2016/longread-gothard/" target="blank" class="footer__link">
+				<div class="teaser">
+					<div class="teaser-bg" style="background: url('img/thumb_gothard.jpg');"></div>
+					<div class="caption">Les oubliés du Gothard</div>
+				</div>
+			</a>
 
-							<a href="https://labs.letemps.ch/interactive/2016/longread-fioul-lourd/" target="blank" class="footer__link">
-								<div class="teaser">
-									<div class="teaser-bg" style="background: url('img/thumb_fioul.jpg');"></div>
-									<div class="caption">Fioul lourd, le sang impur de la globalisation</div>
-								</div>
-							</a>
-						</div>
+			<a href="https://labs.letemps.ch/interactive/2016/longread-fioul-lourd/" target="blank" class="footer__link">
+				<div class="teaser">
+					<div class="teaser-bg" style="background: url('img/thumb_fioul.jpg');"></div>
+					<div class="caption">Fioul lourd, le sang impur de la globalisation</div>
+				</div>
+			</a>
+		</div>
 
-					</div>
+	</div>
 
-					<div class="credits">
-						Texte: Christian Lecomte<br>
-						Photos: Eddy Mottaz, David Wagnière<br>
-						Iconographie: Anne Wyrsch<br>
-						Réalisation: César Greppin et Paul Ronga<br>
-					</div>
-				</footer>
+	<div class="credits">
+		Texte: Christian Lecomte<br>
+		Photos: Eddy Mottaz, David Wagnière<br>
+		Iconographie: Anne Wyrsch<br>
+		Réalisation: César Greppin et Paul Ronga<br>
+	</div>
+</footer>
 
-				{{ block('footer_brand') }}
-				<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
-				<script src="js/jquery.lazyload.js?v=1.9.7"></script>
-				<script src="js/intro-control-min.js"></script>
-				<script src="js/viewport.js"></script>
-				<script src="js/main.js"></script>
-				<script src="js/zoom.js"></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
-				<!-- d3js -->
-				<script src="distances/js/select.js"></script>
-			</body>
-			</html>
+{{ block('footer_brand') }}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+<script src="js/jquery.lazyload.js?v=1.9.7"></script>
+<script src="js/intro-control-min.js"></script>
+<script src="js/viewport.js"></script>
+<script src="js/main.js"></script>
+<script src="js/zoom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
+<!-- d3js -->
+<script src="js/select-min.js"></script>
+</body>
+</html>
