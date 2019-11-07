@@ -1,0 +1,1 @@
+jQuery(document).ready((function(e){$videoHeader=e("header video"),setTimeout((function(){$videoHeader[0].play()}),1e3);var d=e(window).width()}));
