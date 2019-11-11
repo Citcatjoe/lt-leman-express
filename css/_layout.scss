@@ -4,26 +4,28 @@
 	font-size: 1em;
 }
 
+body {margin:0;}
+
 header
 {
 	height: 100%;
 	width: 100%;
-	background: $gray;
-	// background: url('../img/011.jpg');
+	//background: $gray;
+	background: url('../img/header.jpg');
 
 	//background-attachment: fixed;
-	background-position: center top !important;
+	background-position: center bottom !important;
 	overflow: hidden;
-
+	background-size: cover;
 	position: relative;
 	//margin-bottom: 46px;
 
 	@include breakpoint(md) {
-        margin-bottom: 50px;
+        //margin-bottom: 50px;
     }
 
     @include breakpoint(xs) {
-        margin-bottom: 40px;
+        background-position: 60% bottom !important;
     }
 
     .header__bg
@@ -138,18 +140,18 @@ header
 	        {
 	            position: absolute;
 	            //top: 17%;
-	            top: 52%;
+	            top: 78%;
 	            left: 10%;
 	            transform: translate(0, -50%);
 	            width: 80%;
 	            //text-align: center;
 
-	            // @include breakpoint(md) {
-	            //     width: 80%;
-				// }
+	            @include breakpoint(lg) {
+	                 top: 80%;
+				}
 
 				@include breakpoint(md) {
-					top: 50%;
+					//top: 50%;
 				}
 
 	            @include breakpoint(sm) {
@@ -157,7 +159,7 @@ header
 			    }
 
 	            @include breakpoint(xs) {
-	                top: auto;
+	                top: 75%;
 	                bottom: 5%;
 	                left: 50%;
 	                transform: translate(-50%,-50%);

@@ -21,7 +21,7 @@ jQuery(document).ready(function($)
 
 	if(debug){
 		$('.overlay').hide();
-		$introDone = true;
+		$introDone = false;
 	}
 
 	var $hVideoWrapper = $('header .video-wrapper'),

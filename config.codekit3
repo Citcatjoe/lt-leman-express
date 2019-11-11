@@ -67,6 +67,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/css/_distances.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/_distances.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/css/_elements.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -93,6 +106,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/css/_layout-other-title.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/css/_layout-other-title.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/css/_layout.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -102,19 +128,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/css/_layout.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/css/_map-anim.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/css/_map-anim.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1192,16 +1205,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/css/lity.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/css/lity-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/css/loader-min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1252,16 +1255,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"/css/owl.carousel-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/css/owl.carousel-min-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"/css/owl.carousel.css": {
 		"aP": 1,
@@ -1531,17 +1524,6 @@
 		"oAP": "/fonts/rooney_medium.woff",
 		"oF": 0
 		},
-	"/header-home-article.jpg": {
-		"ft": 16384,
-		"iS": 177605,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/header-home-article.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/img/accueil-placeholder.jpg": {
 		"ft": 16384,
 		"iS": 30241,
@@ -1550,7 +1532,7 @@
 		"oAP": "/img/accueil-placeholder.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/AjaxLoader.gif": {
@@ -1559,930 +1541,29 @@
 		"oA": 0,
 		"oAP": "/img/AjaxLoader.gif",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
-	"/img/article/4espace1.jpg": {
+	"/img/ambilly.jpg": {
 		"ft": 16384,
-		"iS": 358009,
+		"iS": 576734,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/article/4espace1.jpg",
+		"oAP": "/img/ambilly.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
-	"/img/article/89430B0FCAFE2ABA.png": {
-		"ft": 32768,
-		"iS": 3614,
-		"oA": 0,
-		"oAP": "/img/article/89430B0FCAFE2ABA.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/article/89430B0FCAFE2ABC.jpeg": {
+	"/img/arret.jpg": {
 		"ft": 16384,
-		"iS": 111963,
+		"iS": 322461,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/article/89430B0FCAFE2ABC.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/89430B0FCAFE2ABC.png": {
-		"ft": 32768,
-		"iS": 3614,
-		"oA": 0,
-		"oAP": "/img/article/89430B0FCAFE2ABC.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/article/89430B0FCAFE2ABD.png": {
-		"ft": 32768,
-		"iS": 3614,
-		"oA": 0,
-		"oAP": "/img/article/89430B0FCAFE2ABD.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/article/baloonz.png": {
-		"ft": 32768,
-		"iS": 9053,
-		"oA": 0,
-		"oAP": "/img/article/baloonz.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/article/big-cm.png": {
-		"ft": 32768,
-		"iS": 1166786,
-		"oA": 0,
-		"oAP": "/img/article/big-cm.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/article/chasseral1.jpg": {
-		"ft": 16384,
-		"iS": 6568008,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/chasseral1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/chasseral2.jpg": {
-		"ft": 16384,
-		"iS": 10015740,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/chasseral2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/chasseral3.jpg": {
-		"ft": 16384,
-		"iS": 9597273,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/chasseral3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/chasseral4.jpg": {
-		"ft": 16384,
-		"iS": 102505,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/chasseral4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/chasseral5.jpg": {
-		"ft": 16384,
-		"iS": 3061820,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/chasseral5.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/chasseral6.jpg": {
-		"ft": 16384,
-		"iS": 12712511,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/chasseral6.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/chasseral6b.jpg": {
-		"ft": 16384,
-		"iS": 77995,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/chasseral6b.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/chasseralmusee.jpg": {
-		"ft": 16384,
-		"iS": 369763,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/chasseralmusee.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/chasseralresto.jpg": {
-		"ft": 16384,
-		"iS": 235264,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/chasseralresto.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/co-construction.jpg": {
-		"ft": 16384,
-		"iS": 392002,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/co-construction.jpg",
+		"oAP": "/img/arret.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"q": 100
-		},
-	"/img/article/decouverte.jpg": {
-		"ft": 16384,
-		"iS": 243354,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/decouverte.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/article/dentdenendaz1.jpg": {
-		"ft": 16384,
-		"iS": 5876792,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/dentdenendaz1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/dentdenendaz2.jpg": {
-		"ft": 16384,
-		"iS": 5426971,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/dentdenendaz2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/dentdenendaz3.jpg": {
-		"ft": 16384,
-		"iS": 9968609,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/dentdenendaz3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/dentdenendaz4.jpg": {
-		"ft": 16384,
-		"iS": 6665082,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/dentdenendaz4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/dentdenendaz5.jpg": {
-		"ft": 16384,
-		"iS": 6098342,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/dentdenendaz5.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/dentdenendazresto.jpg": {
-		"ft": 16384,
-		"iS": 249096,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/dentdenendazresto.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/dentdenendazspa.jpg": {
-		"ft": 16384,
-		"iS": 291706,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/dentdenendazspa.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/distance.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/article/distance.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/article/down.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/article/down.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/article/espagne.jpg": {
-		"ft": 16384,
-		"iS": 122660,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/espagne.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/esprit.jpg": {
-		"ft": 16384,
-		"iS": 595557,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/esprit.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/article/fete.jpg": {
-		"ft": 16384,
-		"iS": 239356,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/fete.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/article/flat.png": {
-		"ft": 32768,
-		"iS": 100730,
-		"oA": 0,
-		"oAP": "/img/article/flat.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/article/ga-header-lausanne.jpg": {
-		"ft": 16384,
-		"iS": 1581198,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/ga-header-lausanne.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/gastlosen1.jpg": {
-		"ft": 16384,
-		"iS": 5692699,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/gastlosen1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/gastlosen2.jpg": {
-		"ft": 16384,
-		"iS": 9100070,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/gastlosen2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/gastlosen3.jpeg": {
-		"ft": 16384,
-		"iS": 2236992,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/gastlosen3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/gastlosen3.jpg": {
-		"ft": 16384,
-		"iS": 203047,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/gastlosen3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/gastlosen4.jpg": {
-		"ft": 16384,
-		"iS": 4738753,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/gastlosen4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/gastlosenjaun.jpg": {
-		"ft": 16384,
-		"iS": 16938209,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/gastlosenjaun.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/gastlosenresto.jpg": {
-		"ft": 16384,
-		"iS": 17743919,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/gastlosenresto.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/glacier30001.jpg": {
-		"ft": 16384,
-		"iS": 10992108,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/glacier30001.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/glacier30002.jpg": {
-		"ft": 16384,
-		"iS": 273850,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/glacier30002.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/glacier30003.jpg": {
-		"ft": 16384,
-		"iS": 283886,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/glacier30003.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/glacier3000luge.jpg": {
-		"ft": 16384,
-		"iS": 1649316,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/glacier3000luge.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/glacier3000resto.jpg": {
-		"ft": 16384,
-		"iS": 147414,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/glacier3000resto.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/gornergrat.jpg": {
-		"ft": 16384,
-		"iS": 193137,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/gornergrat.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/grece.jpg": {
-		"ft": 16384,
-		"iS": 72969,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/grece.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/header-chasseral.jpg": {
-		"ft": 16384,
-		"iS": 513592,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/header-chasseral.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/header-dentdenendaz.jpg": {
-		"ft": 16384,
-		"iS": 375739,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/header-dentdenendaz.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/header-gastlosen.jpg": {
-		"ft": 16384,
-		"iS": 377823,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/header-gastlosen.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/header-glacier3000.jpg": {
-		"ft": 16384,
-		"iS": 384758,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/header-glacier3000.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/header-midi.jpg": {
-		"ft": 16384,
-		"iS": 697528,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/header-midi.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/header-mobile.jpg": {
-		"ft": 16384,
-		"iS": 159889,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/header-mobile.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/article/header.jpg": {
-		"ft": 16384,
-		"iS": 597515,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/header.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/article/logo-cff-railway-neg.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/article/logo-cff-railway-neg.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/article/logo-cff-railway-overlay.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/article/logo-cff-railway-overlay.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/article/logo-cff-railway.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/article/logo-cff-railway.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/article/logo-cm.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/article/logo-cm.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/article/logo-gaz-energie.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/article/logo-gaz-energie.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/article/lointain.jpg": {
-		"ft": 16384,
-		"iS": 273400,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/lointain.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/article/map-side.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/article/map-side.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/article/map-suisse.png": {
-		"ft": 32768,
-		"iS": 484378,
-		"oA": 0,
-		"oAP": "/img/article/map-suisse.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/article/map-suisse.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/article/map-suisse.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/article/map-top.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/article/map-top.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/article/maroc.jpg": {
-		"ft": 16384,
-		"iS": 102524,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/maroc.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/maurice.jpg": {
-		"ft": 16384,
-		"iS": 122519,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/maurice.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/midi1.jpg": {
-		"ft": 16384,
-		"iS": 803534,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/midi1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/midi2.jpg": {
-		"ft": 16384,
-		"iS": 1054569,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/midi2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/midi3.jpg": {
-		"ft": 16384,
-		"iS": 1222431,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/midi3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/midi4.jpg": {
-		"ft": 16384,
-		"iS": 356222,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/midi4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/midi5.jpg": {
-		"ft": 16384,
-		"iS": 892011,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/midi5.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/midibains.jpg": {
-		"ft": 16384,
-		"iS": 378989,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/midibains.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/midibains.png": {
-		"ft": 32768,
-		"iS": 2008148,
-		"oA": 0,
-		"oAP": "/img/article/midibains.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/article/midiresto.jpg": {
-		"ft": 16384,
-		"iS": 20897291,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/midiresto.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/nahum-frenck.jpg": {
-		"ft": 16384,
-		"iS": 261154,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/nahum-frenck.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/regles.jpg": {
-		"ft": 16384,
-		"iS": 374040,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/regles.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/article/repas.jpg": {
-		"ft": 16384,
-		"iS": 325420,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/repas.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/article/repdomi.jpg": {
-		"ft": 16384,
-		"iS": 125344,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/repdomi.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/article/respect.jpg": {
-		"ft": 16384,
-		"iS": 307159,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/respect.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/article/section1.jpg": {
-		"ft": 16384,
-		"iS": 219828,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/section1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/article/section2.jpg": {
-		"ft": 16384,
-		"iS": 11181373,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/section2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/article/section3.jpg": {
-		"ft": 16384,
-		"iS": 481249,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/section3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/article/section4.jpg": {
-		"ft": 16384,
-		"iS": 1830719,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/section4.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/article/section5.jpg": {
-		"ft": 16384,
-		"iS": 6397186,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/article/section5.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/article/time.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/article/time.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/article/up.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/article/up.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
 		},
 	"/img/cd-arrow-tl.svg": {
 		"ft": 2097152,
@@ -2500,9 +1581,20 @@
 		"oA": 0,
 		"oAP": "/img/divers-partners-logo.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
+		"q": 100
+		},
+	"/img/elegant.jpg": {
+		"ft": 16384,
+		"iS": 311591,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/elegant.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/empty.png": {
@@ -2511,9 +1603,119 @@
 		"oA": 0,
 		"oAP": "/img/empty.png",
 		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/forummob.png": {
+		"ft": 32768,
+		"iS": 272737,
+		"oA": 0,
+		"oAP": "/img/forummob.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/fullwidth/Voie_Verte-6.jpg": {
+		"ft": 16384,
+		"iS": 303517,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/fullwidth/Voie_Verte-6.jpg",
+		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
+		"q": 100
+		},
+	"/img/gare-routiere.jpg": {
+		"ft": 16384,
+		"iS": 232745,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/gare-routiere.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/grues.jpg": {
+		"ft": 16384,
+		"iS": 418125,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/grues.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/header-home-article.jpg": {
+		"ft": 16384,
+		"iS": 161141,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/header-home-article.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/header.jpg": {
+		"ft": 16384,
+		"iS": 552091,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/header.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/inter1.jpg": {
+		"ft": 16384,
+		"iS": 293847,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/inter1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/inter2.jpg": {
+		"ft": 16384,
+		"iS": 595974,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/inter2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/inter3.jpg": {
+		"ft": 16384,
+		"iS": 218114,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/inter3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/interx.jpg": {
+		"ft": 16384,
+		"iS": 306700,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/interx.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/lazy-placeholder.jpg": {
@@ -2524,18 +1726,8 @@
 		"oAP": "/img/lazy-placeholder.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
-		},
-	"/img/logo-illustre-pos.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/logo-illustre-pos.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
 		},
 	"/img/logo-lt-blanc.svg": {
 		"ft": 2097152,
@@ -2552,26 +1744,6 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/img/logo-lt.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/logo-sponsor-only-black-small.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/logo-sponsor-only-black-small.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/img/logo-sponsor-only-black.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/logo-sponsor-only-black.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 52780316221407,
@@ -2607,6 +1779,83 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/img/mario-werren.jpg": {
+		"ft": 16384,
+		"iS": 114296,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/mario-werren.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/maya1.jpg": {
+		"ft": 16384,
+		"iS": 348485,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/maya1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/maya2.jpg": {
+		"ft": 16384,
+		"iS": 318882,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/maya2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/plan-desk.png": {
+		"ft": 32768,
+		"iS": 356847,
+		"oA": 0,
+		"oAP": "/img/plan-desk.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/plan-mobile.png": {
+		"ft": 32768,
+		"iS": 355926,
+		"oA": 0,
+		"oAP": "/img/plan-mobile.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/robert1.jpg": {
+		"ft": 16384,
+		"iS": 167825,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/robert1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/robert2.jpg": {
+		"ft": 16384,
+		"iS": 205052,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/robert2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/img/separateur-black.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -2637,6 +1886,17 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/img/thumb-beattyville.jpg": {
+		"ft": 16384,
+		"iS": 1170345,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/thumb-beattyville.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/img/thumb-boldor.jpg": {
 		"ft": 16384,
 		"iS": 79222,
@@ -2645,7 +1905,7 @@
 		"oAP": "/img/thumb-boldor.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/thumb-horlogerie-japonaise.jpg": {
@@ -2656,7 +1916,7 @@
 		"oAP": "/img/thumb-horlogerie-japonaise.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/thumb-montre.jpg": {
@@ -2667,7 +1927,51 @@
 		"oAP": "/img/thumb-montre.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/thumb-pesticides.jpg": {
+		"ft": 16384,
+		"iS": 187544,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/thumb-pesticides.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/thumb-pinchat.jpg": {
+		"ft": 16384,
+		"iS": 100190,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/thumb-pinchat.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/thumb-plasticus.jpg": {
+		"ft": 16384,
+		"iS": 61917,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/thumb-plasticus.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/thumb-secret-bancaire.jpg": {
+		"ft": 16384,
+		"iS": 143418,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/thumb-secret-bancaire.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/thumb-tchernobyl.jpg": {
@@ -2678,7 +1982,18 @@
 		"oAP": "/img/thumb-tchernobyl.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/thumb-urgentistes.jpg": {
+		"ft": 16384,
+		"iS": 87819,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/thumb-urgentistes.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/thumb_adula.jpg": {
@@ -2689,7 +2004,7 @@
 		"oAP": "/img/thumb_adula.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/thumb_fioul.jpg": {
@@ -2700,7 +2015,7 @@
 		"oAP": "/img/thumb_fioul.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/thumb_gothard.jpg": {
@@ -2711,7 +2026,7 @@
 		"oAP": "/img/thumb_gothard.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/thumb_lumieres.jpg": {
@@ -2722,7 +2037,7 @@
 		"oAP": "/img/thumb_lumieres.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/thumb_printemps_arabe.jpg": {
@@ -2733,7 +2048,7 @@
 		"oAP": "/img/thumb_printemps_arabe.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/thumb_science15ans.jpg": {
@@ -2744,7 +2059,7 @@
 		"oAP": "/img/thumb_science15ans.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/thumb_shenzhen.jpg": {
@@ -2755,7 +2070,51 @@
 		"oAP": "/img/thumb_shenzhen.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/tonkin.jpg": {
+		"ft": 16384,
+		"iS": 487463,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/tonkin.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/vignette-agnes.jpg": {
+		"ft": 16384,
+		"iS": 255758,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/vignette-agnes.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/vignette-jp.jpg": {
+		"ft": 16384,
+		"iS": 201805,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/vignette-jp.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/img/voie-verte.jpg": {
+		"ft": 16384,
+		"iS": 209973,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/voie-verte.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/index.html.twig": {
@@ -2790,50 +2149,6 @@
 		"oAP": "/indexxx.php",
 		"oF": 0
 		},
-	"/js/animation-charts-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/animation-charts-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/animation-charts.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/animation-charts-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/animation-citern-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/animation-citern-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/animation-control.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/animation-control-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/js/animation-pesticides-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -2856,24 +2171,35 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/js/animation.gsap.js": {
+	"/js/charts-min.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/animation.gsap-min.js",
+		"oAP": "/js/charts-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"/js/chart.js": {
+	"/js/charts.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/chart-min.js",
+		"oAP": "/js/charts-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/debug.addIndicators.min-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/debug.addIndicators.min-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -2889,13 +2215,13 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/js/graphs-control.js": {
+	"/js/handlebars-v4.0.4-min.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/graphs-control-min.js",
+		"oAP": "/js/handlebars-v4.0.4-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -2907,6 +2233,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/handlebars-v4.0.4-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/hero-control-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/hero-control-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -2944,6 +2281,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/jquery.bxslider.min-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/jquery.bxslider.min-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/jquery.bxslider.min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -2951,6 +2299,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/jquery.bxslider.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/jquery.counterup.min-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/jquery.counterup.min-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -2966,6 +2325,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/jquery.lazyload-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/jquery.lazyload-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/jquery.lazyload.js": {
 		"bF": 0,
 		"ft": 64,
@@ -2977,6 +2347,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/jquery.ScrollMagic.min-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/jquery.ScrollMagic.min-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/jquery.ScrollMagic.min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -2984,17 +2365,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/jquery.ScrollMagic.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/lity.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/lity-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -3043,6 +2413,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/map-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/map-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/map.jpg": {
 		"ft": 16384,
 		"iS": 42459,
@@ -3051,8 +2432,30 @@
 		"oAP": "/js/map.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
+		},
+	"/js/map.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/map-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/owl.carousel-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/owl.carousel-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/js/owl.carousel.js": {
 		"bF": 0,
@@ -3061,6 +2464,39 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/owl.carousel-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/select-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/select-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/select.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/select-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/smil-intro-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/smil-intro-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -3076,6 +2512,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/smooth-scroll.min-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/smooth-scroll.min-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/smooth-scroll.min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -3087,35 +2534,13 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/js/tilt.jquery.js": {
+	"/js/video-control-min.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/tilt.jquery-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/timeline-control.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/timeline-control-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/js/timeline.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/timeline-min.js",
+		"oAP": "/js/video-control-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -3131,6 +2556,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/viewport-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/viewport-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/viewport.js": {
 		"bF": 0,
 		"ft": 64,
@@ -3138,6 +2574,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/viewport-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/zoom-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/zoom-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -3153,10 +2600,10 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/json/data.json": {
+	"/json/distances.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "/json/data-min.json",
+		"oAP": "/json/distances-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
@@ -3169,419 +2616,211 @@
 		"oAP": "/prod/.~lock.Nahum Text_CORR.docx#",
 		"oF": 0
 		},
-	"/prod/________trash/Intro - Chasseral.docx": {
+	"/prod/CEVA_ambilly13.jpg": {
+		"ft": 16384,
+		"iS": 3843520,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/prod/CEVA_ambilly13.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/prod/CEVA_ambilly14.jpg": {
+		"ft": 16384,
+		"iS": 5795382,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/prod/CEVA_ambilly14.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/prod/CEVA_ambilly3.jpg": {
+		"ft": 16384,
+		"iS": 3985939,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/prod/CEVA_ambilly3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/prod/CEVA_archives_construction6.jpg": {
+		"ft": 16384,
+		"iS": 10969590,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/prod/CEVA_archives_construction6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/prod/CEVA_camer_borel2.jpg": {
+		"ft": 16384,
+		"iS": 3281853,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/prod/CEVA_camer_borel2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/prod/CEVA_camer_borel5.jpg": {
+		"ft": 16384,
+		"iS": 3773800,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/prod/CEVA_camer_borel5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/prod/CEVA_camer_borel8.jpg": {
+		"ft": 16384,
+		"iS": 3536816,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/prod/CEVA_camer_borel8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/prod/geneve-carte-new.pdf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/prod/________trash/Intro - Chasseral.docx",
+		"oAP": "/prod/geneve-carte-new.pdf",
 		"oF": 0
 		},
-	"/prod/Carte_IL_site.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/prod/Carte_IL_site.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/prod/Carte_IL_site_OK.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/prod/Carte_IL_site_OK.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/prod/Dent de Nendaz/Cabane de Balavaux.jpg": {
+	"/prod/Genève_PAV-34.jpg": {
 		"ft": 16384,
-		"iS": 249096,
+		"iS": 6612255,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/prod/Dent de Nendaz/Cabane de Balavaux.jpg",
+		"oAP": "/prod/Genève_PAV-34.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/prod/Dent de Nendaz/SPA-des Bisses25.jpg": {
+	"/prod/Genève_PAV-9.jpg": {
 		"ft": 16384,
-		"iS": 396484,
+		"iS": 11584977,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/prod/Dent de Nendaz/SPA-des Bisses25.jpg",
+		"oAP": "/prod/Genève_PAV-9.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/prod/gaz/baloonz.png": {
-		"ft": 32768,
-		"iS": 9053,
-		"oA": 0,
-		"oAP": "/prod/gaz/baloonz.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/prod/gaz/gaz reservoir.jpg": {
+	"/prod/Léman_Express_Frontaliers-003.jpg": {
 		"ft": 16384,
-		"iS": 90318,
+		"iS": 10057909,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/prod/gaz/gaz reservoir.jpg",
+		"oAP": "/prod/Léman_Express_Frontaliers-003.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/prod/gaz/gaz:shutterstock_1129553855.jpg": {
+	"/prod/Léman_Express_Frontaliers-035.jpg": {
 		"ft": 16384,
-		"iS": 12891340,
+		"iS": 9474031,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/prod/gaz/gaz:shutterstock_1129553855.jpg",
+		"oAP": "/prod/Léman_Express_Frontaliers-035.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/prod/gaz/IL42_InfogGaz_01.ai": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/prod/gaz/IL42_InfogGaz_01.ai",
-		"oF": 0
-		},
-	"/prod/gaz/IL42_InfogGaz_02.ai": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/prod/gaz/IL42_InfogGaz_02.ai",
-		"oF": 0
-		},
-	"/prod/gaz/IL42_InfogGaz_03.ai": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/prod/gaz/IL42_InfogGaz_03.ai",
-		"oF": 0
-		},
-	"/prod/gaz/photos gaz/ecorecyclage_01.jpg": {
+	"/prod/Léman_Express_Lancy-023.jpg": {
 		"ft": 16384,
-		"iS": 8223148,
+		"iS": 11027514,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/prod/gaz/photos gaz/ecorecyclage_01.jpg",
+		"oAP": "/prod/Léman_Express_Lancy-023.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/prod/gaz/photos gaz/kMFH_Zwirnerstr_ZH_UWA umweltarena.ch (2).jpg": {
+	"/prod/Léman_Express_Lancy-030.jpg": {
 		"ft": 16384,
-		"iS": 3826981,
+		"iS": 10065859,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/prod/gaz/photos gaz/kMFH_Zwirnerstr_ZH_UWA umweltarena.ch (2).jpg",
+		"oAP": "/prod/Léman_Express_Lancy-030.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/prod/gaz/photos gaz/section1.jpg": {
+	"/prod/Ligne_Tonkin-030.jpg": {
 		"ft": 16384,
-		"iS": 8460363,
+		"iS": 9634833,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/prod/gaz/photos gaz/section1.jpg",
+		"oAP": "/prod/Ligne_Tonkin-030.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/prod/gaz/photos gaz/section2.jpg": {
+	"/prod/Mario_Werren-004.jpg": {
 		"ft": 16384,
-		"iS": 11181373,
+		"iS": 3675193,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/prod/gaz/photos gaz/section2.jpg",
+		"oAP": "/prod/Mario_Werren-004.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/prod/gaz/photos gaz/section4.jpg": {
+	"/prod/Maya_Satlder-002.jpg": {
 		"ft": 16384,
-		"iS": 1830719,
+		"iS": 17151264,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/prod/gaz/photos gaz/section4.jpg",
+		"oAP": "/prod/Maya_Satlder-002.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/prod/gaz/photos gaz/section5.jpg": {
+	"/prod/Maya_Satlder-012.jpg": {
 		"ft": 16384,
-		"iS": 6397186,
+		"iS": 17681192,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/prod/gaz/photos gaz/section5.jpg",
+		"oAP": "/prod/Maya_Satlder-012.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/prod/gaz/photos gaz/© Holdigaz_Vue aérienne du site (2).JPG": {
+	"/prod/Voie_Verte-6.jpg": {
 		"ft": 16384,
-		"iS": 7103292,
+		"iS": 7507257,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/prod/gaz/photos gaz/© Holdigaz_Vue aérienne du site (2).jpg",
+		"oAP": "/prod/Voie_Verte-6.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
-		},
-	"/prod/gaz/photos hydrogene/hydrogene2.tif": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/prod/gaz/photos hydrogene/hydrogene2.tif",
-		"oF": 0
-		},
-	"/prod/gaz/photos hydrogene/hydrogene3.tif": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/prod/gaz/photos hydrogene/hydrogene3.tif",
-		"oF": 0
-		},
-	"/prod/gaz/photos hydrogene/hydrogène1.tif": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/prod/gaz/photos hydrogene/hydrogène1.tif",
-		"oF": 0
-		},
-	"/prod/gaz/photos hydrogene/section3.jpg": {
-		"ft": 16384,
-		"iS": 481249,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/prod/gaz/photos hydrogene/section3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/prod/gaz/Transition énergétique, article entier.docx": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/prod/gaz/Transition énergétique, article entier.docx",
-		"oF": 0
-		},
-	"/prod/Les montées du plaisir_okVB.docx": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/prod/Les montées du plaisir_okVB.docx",
-		"oF": 0
-		},
-	"/prod/map-top.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/prod/map-top.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/prod/Nahum Text_CORR.docx": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/prod/Nahum Text_CORR.docx",
-		"oF": 0
-		},
-	"/prod/nahum-frenck.jpg": {
-		"ft": 16384,
-		"iS": 4009022,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/prod/nahum-frenck.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/prod/photos/4espacebis.jpg": {
-		"ft": 16384,
-		"iS": 11784324,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/prod/photos/4espacebis.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/prod/photos/4espaces.jpg": {
-		"ft": 16384,
-		"iS": 16447414,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/prod/photos/4espaces.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/prod/photos/Ala_decouverte_des_enfants.jpg": {
-		"ft": 16384,
-		"iS": 7306521,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/prod/photos/Ala_decouverte_des_enfants.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/prod/photos/Co-construction.jpg": {
-		"ft": 16384,
-		"iS": 13598416,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/prod/photos/Co-construction.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/prod/photos/Destination_lointaine.jpg": {
-		"ft": 16384,
-		"iS": 5613159,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/prod/photos/Destination_lointaine.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/prod/photos/Esprit_libre(pasMarocouSicile).jpg": {
-		"ft": 16384,
-		"iS": 16482005,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/prod/photos/Esprit_libre(pasMarocouSicile).jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/prod/photos/Fixer_des_regles.jpg": {
-		"ft": 16384,
-		"iS": 19247389,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/prod/photos/Fixer_des_regles.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/prod/photos/jpeg/4espaces2.jpg": {
-		"ft": 16384,
-		"iS": 712661,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/prod/photos/jpeg/4espaces2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/prod/photos/Ouverture1.jpg": {
-		"ft": 16384,
-		"iS": 14461725,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/prod/photos/Ouverture1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/prod/photos/Ouverture_famille.jpg": {
-		"ft": 16384,
-		"iS": 9181026,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/prod/photos/Ouverture_famille.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/prod/photos/repas_plaisir.jpg": {
-		"ft": 16384,
-		"iS": 17955087,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/prod/photos/repas_plaisir.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/prod/photos/respect.jpg": {
-		"ft": 16384,
-		"iS": 6595053,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/prod/photos/respect.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/prod/photoz-promoz.psd": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/prod/photoz-promoz.psd",
-		"oF": 0
-		},
-	"/prod/SBB_CFF_FFS_logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/prod/SBB_CFF_FFS_logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
 		},
 	"/README.md": {
 		"cB": 0,
@@ -3613,12 +2852,20 @@
 		"opt": 1,
 		"q": 100
 		},
-	"/templates/_blocks.html.twig": {
+	"/templates/__blocks.html.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/templates/_blocks.html.twig",
+		"oAP": "/templates/__blocks.html.twig",
+		"oF": 0
+		},
+	"/templates/_no_blocks.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/_no_blocks.html.twig",
 		"oF": 0
 		},
 	"/templates/c_blocks.html.twig": {
@@ -8723,7 +7970,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 587639427.22608495,
-	"displayValue": "ill-longread-gaz-energie",
+	"displayValue": "lt-leman-express",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets-slime",
 	"iconImageWasSetByUser": 0
@@ -10191,7 +9438,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http://localhost:8080/ill-longread-gaz-energie",
+	"externalServerAddress": "http://localhost:8080/lt-leman-express",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",

@@ -8,6 +8,9 @@ $dirs[] = __DIR__ . '/templates';
 if (is_dir( __DIR__ . '/../../_admin/templates')) {
 	$dirs[] =  __DIR__ . '/../../_admin/templates';
 }
+if (is_dir( __DIR__ . '/../../../_admin/templates')) {
+	$dirs[] =  __DIR__ . '/../../../_admin/templates';
+}
 
 if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== FALSE) {
 	$dirs[] = __DIR__ . '/../web/_admin/templates';

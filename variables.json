@@ -1,10 +1,10 @@
 {
 	"title": "Léman Express, le train qui peut en cacher beaucoup d’autres",
-	"description": "Asphyxié par le trafic automobile, le Grand Genève va connaître une révolution avec la mise en circulation, le 15 décembre, du Léman Express. Ce réseau ferroviaire transfrontalier de 230 kilomètres et de 45 gares va inviter les usagers à repenser leur mobilité quotidienne et à élargir leur espace de vie",
-	"authors": "Philippe Clot, César Greppin",
+	"description": "Asphyxié par le trafic automobile, le Grand Genève va connaître une révolution avec la mise en circulation, le 15 décembre, du Léman Express",
+	"authors": "Christian Lecompte, César Greppin",
 	"imgSocial": "social.jpg",
 
-	"navBarStyle": "normal",
+	"navBarStyle": "black",
 	"navBarOffset": "0",
 	"navBarLocked": false,
 

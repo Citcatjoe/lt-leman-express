@@ -5,6 +5,11 @@ jQuery(document).ready(function($)
 		effect : "fadeIn"
 	});
 
+	setTimeout(function() 
+	{
+		$('footer').nextAll('div').css('display', 'none');
+	}, 5000);
+
 	// ZOOM SUR LES IMAGES DISPOSANT DE LA CLASSE ZOOM
 	if ($(window).width() > 1200 )
 	{
